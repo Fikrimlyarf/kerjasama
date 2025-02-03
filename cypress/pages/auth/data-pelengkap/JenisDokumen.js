@@ -68,7 +68,7 @@ class JenisDokumen {
         } else if (alert == 'Hapus'){
             cy.get('.alert').contains(' Berhasil menghapus data Jenis Dokumen').should('be.visible')
         } else if (alert == 'Duplikat'){
-            cy.get('.invalid-feedback.d-block').contains('Jenis dokumen sudah digunakan.').should('be.visible')
+            cy.get('.invalid-feedback.d-block').contains('Jenis Dokumen sudah ada sebelumnya.').should('be.visible')
         }
     }
 

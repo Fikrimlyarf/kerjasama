@@ -18,7 +18,7 @@ beforeEach(() => {
 
 });
 
-describe("Positif Case", () => {
+describe("+ Positif Case", () => {
     it("Admin menambahkan data jenis dokumen", () => {
         dataJenis.listJenisDokumen.forEach((data) => {
             docs.aksiTambah();
@@ -59,7 +59,7 @@ describe("Positif Case", () => {
 });
 
 describe("Negatif Case", () => {
-    it("Admin menambahkan data jenis dokumen dengan nama yang sama", () => {
+    it.only("Admin menambahkan data jenis dokumen dengan nama yang sama", () => {
         docs.aksiTambah();
         docs.inputJenisDokumen(dataJenis.listJenisDokumen[0]);
         docs.aksi("Simpan");
