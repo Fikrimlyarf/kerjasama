@@ -58,7 +58,7 @@ describe("+ Positif Case", () => {
     });
 });
 
-describe("Negatif Case", () => {
+describe("- Negatif Case", () => {
     it.only("Admin menambahkan data jenis dokumen dengan nama yang sama", () => {
         docs.aksiTambah();
         docs.inputJenisDokumen(dataJenis.listJenisDokumen[0]);
