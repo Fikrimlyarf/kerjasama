@@ -1,23 +1,23 @@
 {
     "listKriteriaMitra" : [
         {
-            "kriteria" : "Prodi bekerjasama dengan Perusahaan Multinasional",
+            "kriteria" : "Merupakan Perusahaan Multinasional",
             "keterangan" : "Pengembangan kurikulum bersama"
         },
         {
-            "kriteria" : "Prodi bekerjasama dengan Perusahaan Multinasional (Perusahaan yang beroperasi lebih dari 1 (satu) negara).",   
+            "kriteria" : "Merupakan Perusahaan Multinasional (Perusahaan yang beroperasi lebih dari 1 (satu) negara).",   
             "keterangan" : "Pengembangan kurikulum bersama (merencanakan hasil (output) pembelajaran, konten, dan metode pembelajaran)."
         },
         {
-            "kriteria" : "Prodi bekerjasama dengan Perusahaan Nasional berstandar tinggi (Perusahaan nasional yang sudah menjadi perusahaan publik (terbuka/Tbk.) atau perusaahaan dengan pendapatan setahun terakhir sejumlah lebih dari Rp 100.000.000.000 (seratus miliar rupiah).",   
+            "kriteria" : "Merupakan Perusahaan Nasional berstandar tinggi (Perusahaan nasional yang sudah menjadi perusahaan publik (terbuka/Tbk.) atau perusaahaan dengan pendapatan setahun terakhir sejumlah lebih dari Rp 100.000.000.000 (seratus miliar rupiah).",   
             "keterangan" : "Menyediakan kesempatan pembelajaran berbasis project (PBL)."
         },
         {
-            "kriteria" : "Prodi bekerjasama dengan Perusahaan Rintisan (Startup Company) teknologi.",   
+            "kriteria" : "Merupakan Perusahaan Rintisan (Startup Company) teknologi.",   
             "keterangan" : "Menyediakan kesempatan kerja bagi lulusan."
         },
         {
-            "kriteria" : "Prodi bekerjasama dengan Perusahaan Teknologi Global yang terdaftar di ForbesTop 100 Digital Companies (daftar terbaru yang telah dipublikasikan saat tahun pelaporan berjalan).",   
+            "kriteria" : "Merupakan Perusahaan Teknologi Global yang terdaftar di ForbesTop 100 Digital Companies (daftar terbaru yang telah dipublikasikan saat tahun pelaporan berjalan).",   
             "keterangan" : "Menyediakan program magang paling sedikit 1 (satu) semester penuh."
         },
         {
