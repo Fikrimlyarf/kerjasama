@@ -1,6 +1,6 @@
 class SumberDana {
     visitPage() {
-        cy.contains("Data Pendukung").should("be.visible").click();
+        cy.contains("Data Referensi").should("be.visible").click();
         cy.contains("Sumber Dana").should("be.visible").click();
     }
 
@@ -9,7 +9,7 @@ class SumberDana {
     }
 
     aksiHapusAll() {
-        cy.get('#btn_delete').should("be.visible").click()
+        cy.get('#button_delete').should("be.visible").click()
     }
 
     inputSumberDana(dana) {
@@ -55,8 +55,12 @@ class SumberDana {
         }
     }
 
-    konfirmasiHapus() {
-        cy.get('[id="modal_submit"]').last().should('be.visible').click()
+    hapusItem() {
+        cy.get('#delete-button').should('be.visible').click()
+    }
+
+    hapusAll() {
+        cy.get('#delete-many-button').should('be.visible').click()
     }
 
     alert(alert) {
@@ -68,7 +72,7 @@ class SumberDana {
         } else if (alert == 'Hapus'){
             cy.get('.alert').contains(' Berhasil menghapus data Sumber Dana').should('be.visible')
         } else if (alert == 'Duplikat'){
-            cy.get('.invalid-feedback.d-block').contains('Sumber Dana sudah ada sebelumnya.').should('be.visible')
+            cy.get('.invalid-feedback').contains('Sumber Dana sudah ada sebelumnya.').should('be.visible')
         }
     }
 }

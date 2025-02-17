@@ -18,7 +18,7 @@ beforeEach(() => {
 });
 
 describe("+ Positif Case", () => {
-    it.only("Admin menambahkan data sumber Dana", () => {
+    it("Admin menambahkan data sumber Dana", () => {
         dataDana.listSumberDana.forEach((data) => {
             dana.aksiTambah();
             dana.inputSumberDana(data);
@@ -44,19 +44,16 @@ describe("+ Positif Case", () => {
     it('Admin menghapus data sumber dana', () => {
         dana.cariData("lorem ipsum{enter}");
         dana.aksi("Hapus", "Testing Lorem Ipsum");
-        dana.konfirmasiHapus();
+        dana.hapusItem();
         dana.alert("Hapus");
     });
 
-    it('Admin menghapus semua data', () => {
-        //fix me
-    });
 });
 
 describe("+ Negatif Case", () => {
-    it('Admin menambahkan data sumber dana dengan nama yang sama', () => {
+    it.only('Admin menambahkan data sumber dana dengan nama yang sama', () => {
         dana.aksiTambah();
-        dana.inputSumberDana("Memorandum of Understanding (MoU)");
+        dana.inputSumberDana(dataDana.listSumberDana[0]);
         dana.aksi("Simpan");
         dana.alert("Duplikat");
     });
