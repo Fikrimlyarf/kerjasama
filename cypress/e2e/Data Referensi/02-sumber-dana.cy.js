@@ -18,7 +18,7 @@ beforeEach(() => {
 });
 
 describe("+ Positif Case", () => {
-    it("Admin menambahkan data sumber Dana", () => {
+    it.only("Admin menambahkan data sumber Dana", () => {
         dataDana.listSumberDana.forEach((data) => {
             dana.aksiTambah();
             dana.inputSumberDana(data);
@@ -49,14 +49,14 @@ describe("+ Positif Case", () => {
     });
 
     it('Admin menghapus semua data', () => {
-        
+        //fix me
     });
 });
 
 describe("+ Negatif Case", () => {
-    it.only('Admin menambahkan data sumber dana dengan nama yang sama', () => {
+    it('Admin menambahkan data sumber dana dengan nama yang sama', () => {
         dana.aksiTambah();
-        dana.inputSumberDana(dataDana.listSumberDana[0]);
+        dana.inputSumberDana("Memorandum of Understanding (MoU)");
         dana.aksi("Simpan");
         dana.alert("Duplikat");
     });

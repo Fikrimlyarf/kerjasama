@@ -30,7 +30,7 @@ class SumberDana {
         cy.get('.form-check-input').first().click()
     }
 
-    aksi(aksi, jenisDokumen) {
+    aksi(aksi, sumberDana) {
         let classButton;
 
         if (aksi == "Simpan") {
@@ -45,7 +45,7 @@ class SumberDana {
 
         if (aksi === "Ubah" || aksi === "Hapus") {
             cy.get("td")
-                .contains(jenisDokumen)
+                .contains(sumberDana)
                 .should("be.visible")
                 .parent()
                 .find(`.sym.sym-${classButton}-solid`)

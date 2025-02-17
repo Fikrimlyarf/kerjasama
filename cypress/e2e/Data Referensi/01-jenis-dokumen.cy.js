@@ -45,7 +45,7 @@ describe("+ Positif Case", () => {
     it("Admin menghapus data jenis dokumentasi", () => {
         docs.cariData("lorem ipsum{enter}");
         docs.aksi("Hapus", "Testing Lorem Ipsum");
-        docs.konfirmasiHapus();
+        docs.hapusItem();
         docs.alert("Hapus");
     });
 
@@ -53,15 +53,15 @@ describe("+ Positif Case", () => {
         docs.cariData("testing{enter}");
         docs.checkAll();
         docs.aksiHapusAll();
-        docs.konfirmasiHapus(); //fix me
+        docs.hapusAll(); //fix me
         docs.alert("Hapus");
     });
 });
 
 describe("- Negatif Case", () => {
-    it.only("Admin menambahkan data jenis dokumen dengan nama yang sama", () => {
+    it("Admin menambahkan data jenis dokumen dengan nama yang sama", () => {
         docs.aksiTambah();
-        docs.inputJenisDokumen(dataJenis.listJenisDokumen[0]);
+        docs.inputJenisDokumen("Memorandum of Understanding (MoU)");
         docs.aksi("Simpan");
         docs.alert("Duplikat");
     });
