@@ -52,7 +52,7 @@ describe("+ Positif Case", () => {
 });
 
 describe("+ Negatif Case", () => {
-    it.only('Admin menambahkan data kriteria mitra dengan nama yang sama', () => {
+    it('Admin menambahkan data kriteria mitra dengan nama yang sama', () => {
         kriteria.aksiTambah();
         kriteria.inputKriteriaMitra(dataKriteria.listKriteriaMitra[0].kriteria);
         kriteria.inputKeterangan(dataKriteria.listKriteriaMitra[0].keterangan);

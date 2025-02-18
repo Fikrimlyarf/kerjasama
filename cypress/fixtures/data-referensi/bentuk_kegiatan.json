@@ -1,0 +1,29 @@
+{
+    "listBentukKegiatan" : [
+        {
+            "jenis" : "Penelitian",
+            "bentukKegiatan" : "Pengembangan Pusat Penelitian dan Pengembangan Keilmuan",
+            "keterangan" : "Melakukan penelitian dan pengembangan untuk kepentingan pendidikan"
+
+        },
+        {
+            "jenis" : "Pendidikan",
+            "bentukKegiatan" : "Penyelenggaraan Seminar/Konferensi Ilmiah",
+            "keterangan" : "Melakukan seminar dan konferensi ilmiah untuk memperkenalkan keilmuan baru atau yang sedang berkembang"
+
+        },
+        {
+            "jenis" : "Pengabdian",
+            "bentukKegiatan" : "Membangun Desa/KKN Tematik-Kampus Merdeka",
+            "keterangan" : "Membangun desa atau melakukan KKN tematik dengan program kampus merdeka"
+
+        },
+        {
+            "jenis" : "Pengabdian",
+            "bentukKegiatan" : "Testing",
+            "keterangan" : "Testing"
+
+        }
+
+    ]
+}
