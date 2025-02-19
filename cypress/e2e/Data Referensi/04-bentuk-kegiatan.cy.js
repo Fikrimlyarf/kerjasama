@@ -1,5 +1,5 @@
 import Login from "../../pages/auth/Login";
-import BentukKegiatan from "../../pages/auth/data-pelengkap/BentukKegiatan";
+import BentukKegiatan from "../../pages/data-pelengkap/BentukKegiatan";
 
 const login = new Login();
 const bentukKegiatan = new BentukKegiatan();

@@ -16,7 +16,7 @@ class Login {
     }
 
     konfirmasiLogin() {
-        cy.get('.btn').click()
+        cy.get('.btn-login').should('be.visible').click()
     }
 
     delAngkaRole(a) {
