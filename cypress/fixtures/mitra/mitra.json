@@ -1,60 +1,58 @@
 {
     "listMitra": [
-      {
-        "Jenis Mitra": "Instansi",
-        "Nama Mitra": "Google Academy Indonesia",
-        "Nomor SIUP/NIB/TDP": "GOOGLE/01",
-        "NPWP Mitra": "010203040506",
-        "Kriteria Mitra": "Merupakan Perusahaan Multinasional",
-        "Lingkup Mitra": "Internasional",
-        "Negara": "Indonesia",
-        "Kode POS": "12190",
-        "Alamat": "Pacific Century Place Tower Level 45 SCBD Lot 10, Jl. Jenderal Sudirman No.53, RT.5/RW.3, Senayan, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12190, Indonesia",
-        "Nomor Telepon": "081000000001",
-        "Email": "google_ID@gmail.com",
-        "Link Website": "google.com",
-        "Kontak": [
-          {
-            "No": 1,
-            "Nama Kontak": "John Doe",
-            "Jabatan": "CEO",
-            "Email": "johndoe@yopmail.com",
-            "Nomor Handphone": "081000000001"
-          }
-        ]
-      },
-      {
-        "Jenis Mitra": "Instansi",
-        "Nama Mitra": "PT Sentra Vidya Utama (Sevima)",
-        "Nomor SIUP/NIB/TDP": "SVM/01",
-        "NPWP Mitra": "",
-        "Kriteria Mitra": "Merupakan Perusahaan Rintisan (Startup Company) teknologi.",
-        "Lingkup Mitra": "Nasional",
-        "Provinsi": "JAWA TIMUR",
-        "Kota / Kabupaten": "SURABAYA",
-        "Kecamatan": "RUNGKUT",
-        "Kode POS": "60295",
-        "Alamat": "Medokan Asri Tengah MA-2 Blok Q No 16, Medokan Ayu, Kec. Rungkut, Surabaya, Jawa Timur",
-        "Nomor Telepon": "0822-6161-0404",
-        "Email": "marketing@sevima.co.id",
-        "Link Website": "https://sevima.com/",
-        "Kontak": [
-          {
-            "No": 1,
-            "Nama Kontak": "Nesya",
-            "Jabatan": "Front Office",
-            "Email": "fo@yopmail.com",
-            "Nomor Handphone": "081000000001"
-          },
-          {
-            "No": 2,
-            "Nama Kontak": "Darwin",
-            "Jabatan": "Kepala Rumah Tangga",
-            "Email": "teori_darwin@yopmail.com",
-            "Nomor Handphone": "081000000002"
-          }
-        ]
-      }
+        {
+            "jenisMitra": "Instansi",
+            "namaMitra": "Google Academy Indonesia",
+            "kriteria": "Merupakan Perusahaan Multinasional",
+            "noIzin": "GOOGLE/01",
+            "npwp": "010203040506",
+            "lingkup": "Internasional",
+            "provinsi": "",
+            "kota": "",
+            "kecamatan": "",
+            "negara": "Palestina",
+            "pos": "12190",
+            "alamat": "Pacific Century Place Tower Level 45 SCBD Lot 10, Jl. Jenderal Sudirman No.53, RT.5/RW.3, Senayan, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12190, Indonesia",
+            "email": "google_ID@gmail.com",
+            "telepon": "081000000001",
+            "website": "google.com"
+        },
+        {
+            "jenisMitra": "Instansi",
+            "namaMitra": "PT Sentra Vidya Utama (Sevima)",
+            "noIzin": "SVM/01",
+            "npwp": "070809101112",
+            "kriteria": "Merupakan Perusahaan Rintisan (Startup Company) teknologi.",
+            "lingkup": "Nasional",
+            "provinsi": "JAWA TIMUR",
+            "kota": "SURABAYA",
+            "kecamatan": "RUNGKUT",
+            "negara": "",
+            "pos": "60295",
+            "alamat": "Medokan Asri Tengah MA-2 Blok Q No 16, Medokan Ayu, Kec. Rungkut, Surabaya, Jawa Timur",
+            "email": "marketing@sevima.co.id",
+            "telepon": "0822-6161-0404",
+            "website": "https://sevima.com/"
+        }
+    ],
+    "kontak": [
+        {
+            "nama_kontak": "John Doe",
+            "jabatan": "CEO",
+            "telepon": "081000000001",
+            "email": "johndoe@yopmail.com"
+        },
+        {
+            "nama_kontak": "Maria",
+            "jabatan": "Front Office",
+            "telepon": "081000000001",
+            "email": "fo@yopmail.com"
+        },
+        {
+            "nama_kontak": "Darwin",
+            "jabatan": "Kepala Bagian Pengembangan",
+            "telepon": "081000000002",
+            "email": "teori_darwin@yopmail.com"
+        }
     ]
-  }
-  
+}
