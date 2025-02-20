@@ -21,6 +21,10 @@
             "keterangan" : "Menyediakan program magang paling sedikit 1 (satu) semester penuh."
         },
         {
+            "kriteria" : "Desa yang dikelola oleh masyarakat",   
+            "keterangan" : "Menyediakan tempat praktik bagi mahasiswa yang akan melakukan KKN/Magang."
+        },
+        {
             "kriteria" : "Testing",
             "keterangan" : "Testing"
         }

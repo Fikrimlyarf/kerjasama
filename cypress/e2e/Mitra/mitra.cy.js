@@ -27,9 +27,13 @@ it("Admin menambahkan data mitra", () => {
         mitra.inputNpwp(data.npwp);
         mitra.pilihLingkup(data.lingkup);
         if (data.lingkup === "Regional" || data.lingkup === "Nasional") {
+            cy.wait(1000);
             mitra.autoSelected('name="id_provinsi"', data.provinsi);
+            cy.wait(1000);
             mitra.autoSelected('name="id_kota"', data.kota);
+            cy.wait(1000);
             mitra.autoSelected('name="id_kecamatan"', data.kecamatan);
+            cy.wait(1000);
         } else if (data.lingkup === "Internasional") {
             mitra.autoSelected('name="id_negara"', data.negara);
         }
@@ -49,4 +53,24 @@ it("Admin menambahkan data mitra", () => {
         mitra.alert("Simpan");
         mitra.aksiKembalikelist()
     });
+});
+
+it('Admin mengubah data mitra', () => {
+    mitra.aksi("Detail", "Testing");
+    mitra.aksiUbah();
+    mitra.inputNamaMitra("Mitra Testing");
+    mitra.aksiSimpan(); 
+    mitra.alert("Ubah");
+});
+
+it('Admin mencari data mitra', () => {
+    mitra.cariData("Mitra Testing {enter}");
+    mitra.cekDataList("Mitra Testing");
+});
+
+it('Admin menghapus data mitra', () => {
+    mitra.cariData("Mitra Testing {enter}");
+    mitra.aksi("Hapus", "Mitra Testing");   
+    mitra.hapusItem();
+    mitra.alert("Hapus");
 });

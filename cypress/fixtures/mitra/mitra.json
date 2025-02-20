@@ -2,7 +2,7 @@
     "listMitra": [
         {
             "jenisMitra": "Instansi",
-            "namaMitra": "Google Academy Indonesia",
+            "namaMitra": "Google Academy",
             "kriteria": "Merupakan Perusahaan Multinasional",
             "noIzin": "GOOGLE/01",
             "npwp": "010203040506",
@@ -10,16 +10,16 @@
             "provinsi": "",
             "kota": "",
             "kecamatan": "",
-            "negara": "Palestina",
-            "pos": "12190",
-            "alamat": "Pacific Century Place Tower Level 45 SCBD Lot 10, Jl. Jenderal Sudirman No.53, RT.5/RW.3, Senayan, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12190, Indonesia",
-            "email": "google_ID@gmail.com",
+            "negara": "Singapura",
+            "pos": "117371",
+            "alamat": "70 Pasir Panjang Rd, #03-71 Mapletree Business City II, Singapore 117371",
+            "email": "google@gmail.com",
             "telepon": "081000000001",
             "website": "google.com"
         },
         {
             "jenisMitra": "Instansi",
-            "namaMitra": "PT Sentra Vidya Utama (Sevima)",
+            "namaMitra": "Sevima",
             "noIzin": "SVM/01",
             "npwp": "070809101112",
             "kriteria": "Merupakan Perusahaan Rintisan (Startup Company) teknologi.",
@@ -33,7 +33,59 @@
             "email": "marketing@sevima.co.id",
             "telepon": "0822-6161-0404",
             "website": "https://sevima.com/"
+        },
+        {
+            "jenisMitra": "Perguruan Tinggi",
+            "namaMitra": "Université Paris Cité",
+            "noIzin": "Le-Minerale/01",
+            "npwp": "73115217133",
+            "kriteria": "Lembaga Pendidikan",
+            "lingkup": "Internasional",
+            "provinsi": "",
+            "kota": "",
+            "kecamatan": "",
+            "negara": "Perancis",
+            "pos": "75006",
+            "alamat": "45 Rue des Saints-Pères, 75006 Paris, Prancis",
+            "email": "paris@example.com",
+            "telepon": "+33171251137",
+            "website": "https://u-paris.fr/en/"
+        },
+        {
+            "jenisMitra": "Instansi",
+            "namaMitra": "Kampung Durian Runtuh",
+            "noIzin": "Desa Durian Runtuh/01",
+            "npwp": "D354 Du214n",
+            "kriteria": "Desa yang dikelola oleh masyarakat",
+            "lingkup": "Regional",
+            "provinsi": "JAWA TIMUR",
+            "kota": "KABUPATEN PASURUAN",
+            "kecamatan": "PANDAAN",
+            "negara": "",
+            "pos": "67156",
+            "alamat": "RT.12/RW.06, Gn. Princi, Jatiarjo, Kec. Prigen, Pasuruan, Jawa Timur 67156",
+            "email": "safari@yopmail.com",
+            "telepon": "(0341)666999",
+            "website": "https://domestic.safariprigen.com/"
+        },
+        {
+            "jenisMitra": "Instansi",
+            "namaMitra": "Testing",
+            "noIzin": "Testing",
+            "npwp": "Testing",
+            "kriteria": "Desa yang dikelola oleh masyarakat",
+            "lingkup": "Regional",
+            "provinsi": "JAWA TIMUR",
+            "kota": "KABUPATEN PASURUAN",
+            "kecamatan": "PANDAAN",
+            "negara": "",
+            "pos": "111111",
+            "alamat": "Testing",
+            "email": "Testing@yopmail.com",
+            "telepon": "111111",
+            "website": "https://yopmail.com/en/wm"
         }
+
     ],
     "kontak": [
         {
