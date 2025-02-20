@@ -1,5 +1,5 @@
 import Login from "../../pages/auth/Login";
-import SumberDana from "../../pages/auth/data-pelengkap/SumberDana";
+import SumberDana from "../../pages/data-pelengkap/SumberDana";
 
 const login = new Login();
 const dana = new SumberDana();
@@ -51,7 +51,7 @@ describe("+ Positif Case", () => {
 });
 
 describe("+ Negatif Case", () => {
-    it.only('Admin menambahkan data sumber dana dengan nama yang sama', () => {
+    it('Admin menambahkan data sumber dana dengan nama yang sama', () => {
         dana.aksiTambah();
         dana.inputSumberDana(dataDana.listSumberDana[0]);
         dana.aksi("Simpan");

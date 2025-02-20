@@ -1,33 +1,68 @@
 {
-    "listKriteriaMitra" : [
+    "listKriteriaMitra": [
         {
-            "kriteria" : "Merupakan Perusahaan Multinasional",
-            "keterangan" : "Pengembangan kurikulum bersama"
+            "kriteria": "Perusahaan multinasional",
+            "keterangan": "Perusahaan yang beroperasi di lebih dari satu negara dengan kantor cabang atau operasi global"
         },
         {
-            "kriteria" : "Merupakan Perusahaan Multinasional (Perusahaan yang beroperasi lebih dari 1 (satu) negara).",   
-            "keterangan" : "Pengembangan kurikulum bersama (merencanakan hasil (output) pembelajaran, konten, dan metode pembelajaran)."
+            "kriteria": "Perusahaan nasional berstandar tinggi",
+            "keterangan": "Perusahaan yang beroperasi secara nasional dengan standar kualitas tinggi, memiliki dampak besar di industri dalam negeri"
         },
         {
-            "kriteria" : "Merupakan Perusahaan Nasional berstandar tinggi (Perusahaan nasional yang sudah menjadi perusahaan publik (terbuka/Tbk.) atau perusaahaan dengan pendapatan setahun terakhir sejumlah lebih dari Rp 100.000.000.000 (seratus miliar rupiah).",   
-            "keterangan" : "Menyediakan kesempatan pembelajaran berbasis project (PBL)."
+            "kriteria": "Perusahaan teknologi global",
+            "keterangan": "erusahaan berbasis teknologi yang memiliki skala global dan memimpin inovasi teknologi"
         },
         {
-            "kriteria" : "Merupakan Perusahaan Rintisan (Startup Company) teknologi.",   
-            "keterangan" : "Menyediakan kesempatan kerja bagi lulusan."
+            "kriteria": "Perusahaan rintisan (startup company) teknologi",
+            "keterangan": "Perusahaan baru berbasis teknologi yang berfokus pada inovasi dan pertumbuhan cepat"
         },
         {
-            "kriteria" : "Merupakan Perusahaan Teknologi Global yang terdaftar di ForbesTop 100 Digital Companies (daftar terbaru yang telah dipublikasikan saat tahun pelaporan berjalan).",   
-            "keterangan" : "Menyediakan program magang paling sedikit 1 (satu) semester penuh."
+            "kriteria": "Organisasi nirlaba kelas dunia",
+            "keterangan": "Organisasi yang tidak berorientasi pada keuntungan dan memiliki dampak global"
         },
         {
-            "kriteria" : "Desa yang dikelola oleh masyarakat",   
-            "keterangan" : "Menyediakan tempat praktik bagi mahasiswa yang akan melakukan KKN/Magang."
+            "kriteria": "Institusi/ Organisasi multilateral",
+            "keterangan": "Organisasi yang melibatkan lebih dari dua negara untuk kerja sama internasional"
         },
         {
-            "kriteria" : "Testing",
-            "keterangan" : "Testing"
+            "kriteria": "Perguruan tinggi yang masuk dalam daftar QS200 berdasarkan bidang ilmu (subject)",
+            "keterangan": "Universitas yang masuk dalam peringkat QS Top 200 berdasarkan bidang studi tertentu"
+        },
+        {
+            "kriteria": "Instansi pemerintah Pusat dan/atau Daerah BUMN dan/atau BUMD",
+            "keterangan": "Lembaga pemerintahan yang mengelola kebijakan dan pelayanan publik, serta badan usaha milik negara/daerah"
+        },
+        {
+            "kriteria": "Rumah Sakit",
+            "keterangan": "Fasilitas layanan kesehatan yang memberikan pelayanan medis kepada masyarakat"
+        },
+        {
+            "kriteria": "Dunia Usaha",
+            "keterangan": "Sektor bisnis secara umum, baik yang berbentuk usaha mikro, kecil, dan menengah (UMKM) maupun perusahaan besar di berbagai industri"
+        },
+        {
+            "kriteria": "Institusi Pendidikan",
+            "keterangan": "Lembaga yang menyelenggarakan pendidikan formal dan nonformal"
+        },
+        {
+            "kriteria": "Organisasi",
+            "keterangan": "Kelompok atau badan yang memiliki tujuan tertentu dalam berbagai bidang"
+        },
+        {
+            "kriteria": "Perguruan tinggi, fakultas, atau program studi dalam bidang yang relevan",
+            "keterangan": "Universitas, fakultas, atau jurusan yang memiliki keterkaitan dengan bidang kerja sama"
+        },
+        {
+            "kriteria": "Lembaga riset pemerintah, swasta, nasional, maupun internasional",
+            "keterangan": "Institusi yang fokus pada penelitian dan pengembangan di berbagai bidang"
+        },
+        {
+            "kriteria": "Lembaga kebudayaan berskala nasional/ bereputasi",
+            "keterangan": "Institusi yang bergerak dalam pelestarian dan pengembangan budaya, baik dalam skala nasional maupun internasional"
+        },
+        {
+            "kriteria": "Testing",
+            "keterangan": "Testing"
         }
-        
     ]
 }

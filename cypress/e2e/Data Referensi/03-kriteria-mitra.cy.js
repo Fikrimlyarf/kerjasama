@@ -1,5 +1,5 @@
 import Login from "../../pages/auth/Login";
-import KriteriaMitra from "../../pages/auth/data-pelengkap/KriteriaMitra";
+import KriteriaMitra from "../../pages/data-pelengkap/KriteriaMitra";
 
 const login = new Login();
 const kriteria = new KriteriaMitra();
@@ -33,7 +33,7 @@ describe("+ Positif Case", () => {
         kriteria.cekDataList("Testing");
     });
 
-    it('Admin mengubah nama kriteria mitra', () => {
+    it.only('Admin mengubah nama kriteria mitra', () => {
         kriteria.cariData("testing {enter}");
         kriteria.cekDataList("Testing");
         kriteria.aksi("Ubah", "Testing");
@@ -43,7 +43,7 @@ describe("+ Positif Case", () => {
         kriteria.alert("Ubah");
     });
 
-    it('Admin menghapus data kriteria mitra', () => {
+    it.only('Admin menghapus data kriteria mitra', () => {
         kriteria.cariData("lorem ipsum{enter}");
         kriteria.aksi("Hapus", "Testing Lorem Ipsum");
         kriteria.hapusItem();

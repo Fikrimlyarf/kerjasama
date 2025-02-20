@@ -53,7 +53,7 @@ describe("+ Positif Case", () => {
 })
 
 describe("+ Negatif Case", () => {
-    it.only('Admin menambahkan data bentuk kegiatan dengan nama yang sama', () => {
+    it('Admin menambahkan data bentuk kegiatan dengan nama yang sama', () => {
         bentukKegiatan.aksiTambah();
         bentukKegiatan.pilihJenisKegiatan(dataBentukKegiatan.listBentukKegiatan[0].jenis);
         bentukKegiatan.inputBentukKegiatan(dataBentukKegiatan.listBentukKegiatan[0].bentukKegiatan);
