@@ -33,7 +33,7 @@ describe("+ Positif Case", () => {
         kriteria.cekDataList("Testing");
     });
 
-    it.only('Admin mengubah nama kriteria mitra', () => {
+    it('Admin mengubah nama kriteria mitra', () => {
         kriteria.cariData("testing {enter}");
         kriteria.cekDataList("Testing");
         kriteria.aksi("Ubah", "Testing");
@@ -43,7 +43,7 @@ describe("+ Positif Case", () => {
         kriteria.alert("Ubah");
     });
 
-    it.only('Admin menghapus data kriteria mitra', () => {
+    it('Admin menghapus data kriteria mitra', () => {
         kriteria.cariData("lorem ipsum{enter}");
         kriteria.aksi("Hapus", "Testing Lorem Ipsum");
         kriteria.hapusItem();

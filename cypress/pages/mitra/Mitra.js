@@ -71,8 +71,8 @@ class Mitra {
         cy.get("#form-control-website").clear().type(web);
     }
 
-    kontak(value, index, name) {
-        cy.get(`input[name="record.kontak.${index}.${name}"]`)
+    kontak(value, index, elemet) {
+        cy.get(`input[name="record.kontak.${index}.${elemet}"]`)
             .clear()
             .type(value);
     }
