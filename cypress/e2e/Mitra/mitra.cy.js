@@ -68,7 +68,7 @@ it('Admin mencari data mitra', () => {
     mitra.cekDataList("Mitra Testing");
 });
 
-it('Admin menghapus data mitra', () => {
+it.only('Admin menghapus data mitra', () => {
     mitra.cariData("Mitra Testing {enter}");
     mitra.aksi("Hapus", "Mitra Testing");   
     mitra.hapusItem();

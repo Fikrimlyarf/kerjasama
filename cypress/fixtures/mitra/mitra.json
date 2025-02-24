@@ -3,7 +3,7 @@
         {
             "jenisMitra": "Instansi",
             "namaMitra": "Google Academy",
-            "kriteria": "Merupakan Perusahaan Multinasional",
+            "kriteria": "Perusahaan multinasional",
             "noIzin": "GOOGLE/01",
             "npwp": "010203040506",
             "lingkup": "Internasional",
@@ -22,7 +22,7 @@
             "namaMitra": "Sevima",
             "noIzin": "SVM/01",
             "npwp": "070809101112",
-            "kriteria": "Merupakan Perusahaan Rintisan (Startup Company) teknologi.",
+            "kriteria": "Perusahaan rintisan (startup company) teknologi",
             "lingkup": "Nasional",
             "provinsi": "JAWA TIMUR",
             "kota": "SURABAYA",
@@ -39,7 +39,7 @@
             "namaMitra": "Université Paris Cité",
             "noIzin": "Le-Minerale/01",
             "npwp": "73115217133",
-            "kriteria": "Lembaga Pendidikan",
+            "kriteria": "Institusi Pendidikan",
             "lingkup": "Internasional",
             "provinsi": "",
             "kota": "",
@@ -56,7 +56,7 @@
             "namaMitra": "Kampung Durian Runtuh",
             "noIzin": "Desa Durian Runtuh/01",
             "npwp": "D354 Du214n",
-            "kriteria": "Desa yang dikelola oleh masyarakat",
+            "kriteria": "Dunia Usaha",
             "lingkup": "Regional",
             "provinsi": "JAWA TIMUR",
             "kota": "KABUPATEN PASURUAN",
@@ -73,7 +73,7 @@
             "namaMitra": "Testing",
             "noIzin": "Testing",
             "npwp": "Testing",
-            "kriteria": "Desa yang dikelola oleh masyarakat",
+            "kriteria": "Dunia Usaha",
             "lingkup": "Regional",
             "provinsi": "JAWA TIMUR",
             "kota": "KABUPATEN PASURUAN",
@@ -90,19 +90,13 @@
     "kontak": [
         {
             "nama_kontak": "John Doe",
-            "jabatan": "CEO",
+            "jabatan": "Head of IT",
             "telepon": "081000000001",
             "email": "johndoe@yopmail.com"
         },
         {
-            "nama_kontak": "Maria",
-            "jabatan": "Front Office",
-            "telepon": "081000000001",
-            "email": "fo@yopmail.com"
-        },
-        {
             "nama_kontak": "Darwin",
-            "jabatan": "Kepala Bagian Pengembangan",
+            "jabatan": "Kepala Bagian Kerjasama",
             "telepon": "081000000002",
             "email": "teori_darwin@yopmail.com"
         }
