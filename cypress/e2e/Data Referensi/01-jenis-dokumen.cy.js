@@ -45,9 +45,9 @@ describe("+ Positif Case", () => {
     });
 
     it("Admin menghapus data jenis dokumentasi", () => {
-        docs.cariData("lorem ipsum{enter}");
-        docs.aksi("Hapus", "Testing Lorem Ipsum");
-        docs.hapusItem();
+        keyword.cariData("lorem ipsum{enter}");
+        keyword.aksi("Hapus", "Testing Lorem Ipsum");
+        keyword.hapusItem();
         keyword.alert("Hapus", "Jenis Dokumen");
     });
 

@@ -10,6 +10,10 @@ class Keyword {
         cy.get("td").parent().contains(cari).should("be.visible");
     }
 
+    hapusItem() {
+        cy.get("#delete-button").should("be.visible").click();
+    }
+
     autoSelected(elm, value) {
         cy.get("[" + elm + "]")
             .next()

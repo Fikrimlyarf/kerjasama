@@ -44,9 +44,9 @@ describe("+ Positif Case", () => {
     });
 
     it('Admin menghapus data sumber dana', () => {
-        dana.cariData("lorem ipsum{enter}");
-        dana.aksi("Hapus", "Testing Lorem Ipsum");
-        dana.hapusItem();
+        keyword.cariData("lorem ipsum{enter}");
+        keyword.aksi("Hapus", "Testing Lorem Ipsum");
+        keyword.hapusItem();
         keyword.alert("Hapus", "Sumber Dana");
     });
 

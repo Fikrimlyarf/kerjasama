@@ -1,7 +1,8 @@
 {
-    "sasaran": [
+    "listSasaran": [
         {
             "namaSasaran": "Meningkatnya program studi yang berkualitas",
+            "keterangan" : "Pengembangan program studi dilakukan dengan mengacu pada standar nasional maupun internasional, peningkatan akreditasi, serta penyediaan sarana dan prasarana yang menunjang pembelajaran berkualitas.",
             "level": "Prioritas Kementrian",
             "detail": [
                 {
@@ -14,6 +15,7 @@
         },
         {
             "namaSasaran": "Meningkatnya kualitas lulusan pendidikan tinggi",
+            "keterangan" : "Perguruan tinggi berfokus pada peningkatan kompetensi lulusan agar siap bersaing di dunia kerja, memiliki keterampilan yang relevan, serta mampu beradaptasi dengan perubahan global dan kebutuhan industri.",
             "level": "Prioritas",
             "detail": [
                 {
@@ -32,6 +34,7 @@
         },
         {
             "namaSasaran": "Meningkatnya inovasi perguruan tinggi dalam rangka meningkatkan mutu pendidikan",
+            "keterangan" : "Perguruan tinggi diharapkan terus berinovasi dalam metode pembelajaran, penelitian, serta pengabdian kepada masyarakat guna meningkatkan kualitas pendidikan dan daya saing institusi.",
             "level": "Prioritas",
             "detail": [
                 {
@@ -44,6 +47,7 @@
         },
         {
             "namaSasaran": "Meningkatnya kualitas dosen pendidikan tinggi",
+            "keterangan" : "Peningkatan kualitas dosen dilakukan melalui pelatihan, sertifikasi, pendidikan lanjutan, serta dukungan penelitian dan publikasi ilmiah agar dapat memberikan pembelajaran yang lebih efektif dan inovatif kepada mahasiswa.",
             "level": "Prioritas",
             "detail": [
                 {
@@ -68,6 +72,7 @@
         },
         {
             "namaSasaran": "Meningkatnya kualitas kurikulum dan pembelajaran",
+            "keterangan" : "Kurikulum pendidikan tinggi harus terus diperbarui agar sesuai dengan perkembangan ilmu pengetahuan, teknologi, dan kebutuhan industri, serta didukung dengan metode pembelajaran yang interaktif dan berbasis teknologi.",
             "level": "Prioritas",
             "detail": [
                 {
@@ -87,6 +92,19 @@
                     "keterangan": "Persentase program studi S1 danD4/D3/D2 yang memiliki akreditasi atau sertifikat internasional yang diakui pemerintah.",
                     "volume": "0",
                     "satuan": " "
+                }
+            ]
+        },
+        {
+            "namaSasaran": "Testing",
+            "keterangan" : "Testing",
+            "level": "Testing",
+            "detail": [
+                {
+                    "indikator": "Testing",
+                    "keterangan": "Testing",
+                    "volume": "Testing",
+                    "satuan": "Testing"
                 }
             ]
         }
