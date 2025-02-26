@@ -55,10 +55,29 @@ describe("+ Positif Case", () => {
         keyword.alert("Ubah", "Sasaran Kinerja");
     });
 
-    it.only('Admin menghapus data sasaran kinerja', () => {
+    it('Admin menghapus data sasaran kinerja', () => {
         keyword.cariData("lorem ipsum{enter}");
         keyword.aksi("Hapus", "Testing Lorem Ipsum");
         keyword.hapusItem();
         keyword.alert("Hapus", "Sasaran Kinerja");
     });
 });
+
+describe("+ Negatif Case", () => {
+    it.only('Admin menambahkan data sasaran kinerja dengan nama yang sama', () => {
+        sasaran.aksiTambah();
+        sasaran.inputSasaranKinerja(dataSasaran.listSasaran[0].namaSasaran);
+        sasaran.inputKeterangan(dataSasaran.listSasaran[0].keterangan);
+        sasaran.inputLevel(dataSasaran.listSasaran[0].level);
+        dataSasaran.listSasaran[0].detail.forEach((xyz, index) => {
+            Object.keys(xyz).forEach((key) => {
+                sasaran.inputIndikator(xyz[key], index, key);
+            });
+            if (index < dataSasaran.listSasaran[0].detail.length - 1) {
+                sasaran.aksiTambahIndikator();
+            }
+        });
+        sasaran.aksiSimpan();
+        keyword.alert("Duplikat", "Sasaran Kinerja");
+    });
+})
