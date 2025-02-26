@@ -1,8 +1,10 @@
 import Login from "../../pages/auth/Login";
 import BentukKegiatan from "../../pages/data-pelengkap/BentukKegiatan";
+import Keyword from "../../pages/keyword";
 
 const login = new Login();
-const bentukKegiatan = new BentukKegiatan();
+const bentuk = new BentukKegiatan();
+const keyword = new Keyword();
 let dataBentukKegiatan;
 
 beforeEach(() => {
@@ -10,7 +12,7 @@ beforeEach(() => {
     login.user("Admin Support");
     login.konfirmasiLogin();
     login.pilihModul("Admin Support Sevima", "Kerjasama");
-    bentukKegiatan.visitPage();
+    bentuk.visitPage();
 
     cy.fixture("data-referensi/bentuk_kegiatan").then((data) => {
         dataBentukKegiatan = data;
@@ -20,45 +22,52 @@ beforeEach(() => {
 describe("+ Positif Case", () => {
     it("Admin menambahkan data bentuk kegiatan", () => {
         dataBentukKegiatan.listBentukKegiatan.forEach((data) => {
-            bentukKegiatan.aksiTambah();
-            bentukKegiatan.pilihJenisKegiatan(data.jenis);
-            bentukKegiatan.inputBentukKegiatan(data.bentukKegiatan);
-            bentukKegiatan.inputKeterangan(data.keterangan);
-            bentukKegiatan.aksi("Simpan");
-            bentukKegiatan.alert("Simpan");
+            bentuk.aksiTambah();
+            bentuk.pilihJenis('name="id_jenis_kegiatan"', data.jenis); //fix me
+            bentuk.inputBentukKegiatan(data.bentukKegiatan);
+            bentuk.inputKeterangan(data.keterangan);
+            data.sasaran.forEach((pilih, index) => {
+                if (index < pilih.length - 1) {
+                    bentuk.pilihSasaran(pilih);
+                }
+            });
+            bentuk.aksiSimpan();
+            keyword.alert("Simpan", "Bentuk Kegiatan");
+            bentuk.aksiKembalikelist();
         });
     });
 
-    it('Admin mencari data bentuk kegiatan', () => {
-        bentukKegiatan.cariData("testing {enter}");
-        bentukKegiatan.cekDataList("Testing");
+    it("Admin mencari data bentuk kegiatan", () => {
+        keyword.cariData("testing {enter}");
+        keyword.cekDataList("Testing");
     });
 
-    it('Admin mengubah nama bentuk kegiatan', () => {
-        bentukKegiatan.cariData("testing {enter}");
-        bentukKegiatan.cekDataList("Testing");
-        bentukKegiatan.aksi("Ubah", "Testing");
-        bentukKegiatan.inputBentukKegiatan("Testing Lorem Ipsum");
-        bentukKegiatan.inputKeterangan("Lorem Ipsum");
-        bentukKegiatan.aksi("Simpan");
-        bentukKegiatan.alert("Ubah");
+    it("Admin mengubah nama bentuk kegiatan", () => {
+        keyword.cariData("testing {enter}");
+        keyword.cekDataList("Testing");
+        keyword.aksi("Detail", "Testing");
+        bentuk.aksiUbahData();
+        bentuk.inputBentukKegiatan("Testing Lorem Ipsum");
+        bentuk.inputKeterangan("Lorem Ipsum");
+        bentuk.aksiSimpan();
+        keyword.alert("Ubah", "Bentuk Kegiatan");
     });
 
-    it('Admin menghapus data bentuk kegiatan', () => {
-        bentukKegiatan.cariData("lorem ipsum{enter}");
-        bentukKegiatan.aksi("Hapus", "Testing Lorem Ipsum");
-        bentukKegiatan.hapusItem();
-        bentukKegiatan.alert("Hapus");
+    it("Admin menghapus data bentuk kegiatan", () => {
+        keyword.cariData("lorem ipsum{enter}");
+        keyword.aksi("Hapus", "Testing Lorem Ipsum");
+        keyword.hapusItem();
+        keyword.alert("Hapus", "Bentuk Kegiatan");
     });
-})
+});
 
 describe("+ Negatif Case", () => {
-    it('Admin menambahkan data bentuk kegiatan dengan nama yang sama', () => {
-        bentukKegiatan.aksiTambah();
-        bentukKegiatan.pilihJenisKegiatan(dataBentukKegiatan.listBentukKegiatan[0].jenis);
-        bentukKegiatan.inputBentukKegiatan(dataBentukKegiatan.listBentukKegiatan[0].bentukKegiatan);
-        bentukKegiatan.inputKeterangan(dataBentukKegiatan.listBentukKegiatan[0].keterangan);
-        bentukKegiatan.aksi("Simpan");
-        bentukKegiatan.alert("Duplikat");
+    it("Admin menambahkan data bentuk kegiatan dengan nama yang sama", () => {      
+        bentuk.aksiTambah();
+        bentuk.pilihJenis('name="id_jenis_kegiatan"', dataBentukKegiatan.listBentukKegiatan[0].jenis); //fix me
+        bentuk.inputBentukKegiatan(dataBentukKegiatan.listBentukKegiatan[0].bentukKegiatan);
+        bentuk.inputKeterangan(dataBentukKegiatan.listBentukKegiatan[0].keterangan);
+        bentuk.aksiSimpan();
+        keyword.alert("Duplikat", "Bentuk Kegiatan");
     });
-})
+});

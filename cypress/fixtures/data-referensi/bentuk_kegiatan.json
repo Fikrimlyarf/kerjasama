@@ -3,28 +3,46 @@
         {
             "jenis" : "Penelitian",
             "bentukKegiatan" : "Pengembangan Pusat Penelitian dan Pengembangan Keilmuan",
-            "keterangan" : "Melakukan penelitian dan pengembangan untuk kepentingan pendidikan"
+            "keterangan" : "Melakukan penelitian dan pengembangan untuk kepentingan pendidikan",
+            "sasaran" : [
+                "Meningkatnya inovasi perguruan tinggi dalam rangka meningkatkan mutu pendidikan",                
+                "Meningkatnya program studi yang berkualitas"
+            ]
         },
         {
             "jenis" : "Pendidikan",
             "bentukKegiatan" : "Penyelenggaraan Seminar/Konferensi Ilmiah",
-            "keterangan" : "Melakukan seminar dan konferensi ilmiah untuk memperkenalkan keilmuan baru atau yang sedang berkembang"
+            "keterangan" : "Melakukan seminar dan konferensi ilmiah untuk memperkenalkan keilmuan baru atau yang sedang berkembang",
+            "sasaran" : [
+                "Meningkatnya kualitas dosen pendidikan tinggi"                
+            ]
         },
         {
             "jenis" : "Pengabdian",
             "bentukKegiatan" : "Membangun Desa/KKN Tematik-Kampus Merdeka",
-            "keterangan" : "Membangun desa atau melakukan KKN tematik dengan program kampus merdeka"
+            "keterangan" : "Membangun desa atau melakukan KKN tematik dengan program kampus merdeka",
+            "sasaran" :[
+                "Meningkatnya kualitas lulusan pendidikan tinggi"
+            ]
         },
         {
             "jenis" : "Pendidikan",
             "bentukKegiatan" : "Pertukaran Pelajara Kampus Merdeka",
-            "keterangan" : "Pertukaran Pelajara Kampus Merdeka"
+            "keterangan" : "Pertukaran Pelajara Kampus Merdeka",
+            "sasaran" :[
+                "Meningkatnya kualitas lulusan pendidikan tinggi",
+                "Meningkatnya program studi yang berkualitas"
+            ]
 
         },
         {
             "jenis" : "Pengabdian",
             "bentukKegiatan" : "Testing",
-            "keterangan" : "Testing"
+            "keterangan" : "Testing",
+            "sasaran" :[
+                "Meningkatnya kualitas lulusan pendidikan tinggi",
+                "Meningkatnya program studi yang berkualitas"
+            ]
         }
 
     ]

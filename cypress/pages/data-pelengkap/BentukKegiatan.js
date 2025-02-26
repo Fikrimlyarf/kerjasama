@@ -12,8 +12,16 @@ class BentukKegiatan {
         cy.get("#button_delete").should("be.visible").click();
     }
 
-    pilihJenisKegiatan(jenisKegiatan) {
-        cy.get('.form-group > .form-select').select(jenisKegiatan);
+    aksiSimpan() {
+        cy.contains("Simpan").should("be.visible").click();
+    }
+
+    aksiUbahData() {
+        cy.contains("Ubah Data").should("be.visible").click();
+    }  
+
+    aksiKembalikelist() {
+        cy.contains("Kembali ke List").should("be.visible").click();
     }
 
     inputBentukKegiatan(bentuk) {
@@ -38,58 +46,24 @@ class BentukKegiatan {
         cy.get(".form-check-input").first().click();
     }
 
-    aksi(aksi, bentukKegiatan) {
-        let classButton;
-
-        if (aksi == "Simpan") {
-            classButton = "check";
-        } else if (aksi == "Batal") {
-            classButton = "x-close";
-        } else if (aksi == "Ubah") {
-            classButton = "pencil";
-        } else if (aksi == "Hapus") {
-            classButton = "trash";
-        }
-
-        if (aksi === "Ubah" || aksi === "Hapus") {
-            cy.get("td")
-                .contains(bentukKegiatan)
-                .should("be.visible")
-                .parent()
-                .find(`.sym.sym-${classButton}-solid`)
-                .click();
-        } else {
-            cy.get(`.sym.sym-${classButton}-solid`).click();
-        }
+    pilihJenis(elm, value) {
+        cy.get("[" + elm + "]")
+            .next()
+            .click();
+        cy.get(".select2-search__field").last().type(value);
+        cy.get(".select2-results__options")
+            .contains(value)
+            .click({ force: true });
     }
 
-    hapusItem() {
-        cy.get("#delete-button").should("be.visible").click();
+    pilihSasaran(value) {
+        cy.get("#select2-id_sasaran_kinerja-container").parent().click(); 
+        cy.get(".select2-search__field").type(value);
+        cy.get(".select2-results__options")
+        .contains(value)
+            .click({ force: true });
     }
 
-    hapusAll() {
-        cy.get("#delete-many-button").should("be.visible").click();
-    }
-
-    alert(alert) {
-        if (alert == "Simpan") {
-            cy.get(".alert")
-                .contains("Berhasil menambahkan data Bentuk Kegiatan")
-                .should("be.visible");
-        } else if (alert == "Ubah") {
-            cy.get(".alert")
-                .contains("Berhasil mengubah data Bentuk Kegiatan")
-                .should("be.visible");
-        } else if (alert == "Hapus") {
-            cy.get(".alert")
-                .contains(" Berhasil menghapus data Bentuk Kegiatan")
-                .should("be.visible");
-        } else if (alert == "Duplikat") {
-            cy.get(".invalid-feedback")
-                .contains("Bentuk Kegiatan sudah ada sebelumnya.")
-                .should("be.visible");
-        }
-    }
 }
 
 export default BentukKegiatan;
