@@ -64,7 +64,7 @@ describe("+ Positif Case", () => {
 });
 
 describe("+ Negatif Case", () => {
-    it.only('Admin menambahkan data sasaran kinerja dengan nama yang sama', () => {
+    it('Admin menambahkan data sasaran kinerja dengan nama yang sama', () => {
         sasaran.aksiTambah();
         sasaran.inputSasaranKinerja(dataSasaran.listSasaran[0].namaSasaran);
         sasaran.inputKeterangan(dataSasaran.listSasaran[0].keterangan);
