@@ -1,8 +1,10 @@
 import Login from "../../pages/auth/Login";
 import KriteriaMitra from "../../pages/data-pelengkap/KriteriaMitra";
+import Keyword from "../../pages/keyword";
 
 const login = new Login();
 const kriteria = new KriteriaMitra();
+const keyword = new Keyword();
 let dataKriteria;
 
 beforeEach(() => {
@@ -23,14 +25,14 @@ describe("+ Positif Case", () => {
             kriteria.aksiTambah();
             kriteria.inputKriteriaMitra(data.kriteria);
             kriteria.inputKeterangan(data.keterangan);
-            kriteria.aksi("Simpan");
-            kriteria.alert("Simpan");
+            keyword.aksi("Simpan");
+            keyword.alert("Simpan", "Kriteria Mitra");
         });
     });
 
     it('Admin mencari data kriteria mitra', () => {
-        kriteria.cariData("testing {enter}");
-        kriteria.cekDataList("Testing");
+        keyword.cariData("testing {enter}");
+        keyword.cekDataList("Testing");
     });
 
     it('Admin mengubah nama kriteria mitra', () => {
@@ -39,15 +41,15 @@ describe("+ Positif Case", () => {
         kriteria.aksi("Ubah", "Testing");
         kriteria.inputKriteriaMitra("Testing Lorem Ipsum");
         kriteria.inputKeterangan("Lorem Ipsum");
-        kriteria.aksi("Simpan");
-        kriteria.alert("Ubah");
+        keyword.aksi("Simpan");
+        keyword.alert("Ubah", "Kriteria Mitra");
     });
 
     it('Admin menghapus data kriteria mitra', () => {
         kriteria.cariData("lorem ipsum{enter}");
         kriteria.aksi("Hapus", "Testing Lorem Ipsum");
         kriteria.hapusItem();
-        kriteria.alert("Hapus");
+        keyword.alert("Hapus", "Kriteria Mitra");
     });
 });
 
@@ -57,6 +59,6 @@ describe("+ Negatif Case", () => {
         kriteria.inputKriteriaMitra(dataKriteria.listKriteriaMitra[0].kriteria);
         kriteria.inputKeterangan(dataKriteria.listKriteriaMitra[0].keterangan);
         kriteria.aksi("Simpan");
-        kriteria.alert("Duplikat");
+        keyword.alert("Duplikat", "Kriteria Mitra");
     });
 })

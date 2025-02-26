@@ -1,8 +1,10 @@
 import Login from "../../pages/auth/Login";
 import SumberDana from "../../pages/data-pelengkap/SumberDana";
+import Keyword from "../../pages/keyword";
 
 const login = new Login();
 const dana = new SumberDana();
+const keyword = new Keyword();
 let dataDana;
 
 beforeEach(() => {
@@ -22,14 +24,14 @@ describe("+ Positif Case", () => {
         dataDana.listSumberDana.forEach((data) => {
             dana.aksiTambah();
             dana.inputSumberDana(data);
-            dana.aksi("Simpan");
-            dana.alert("Simpan");
+            keyword.aksi("Simpan");
+            keyword.alert("Simpan", "Sumber Dana");
         });
     });
 
     it('Admin mencari data sumber dana', () => {
-        dana.cariData("testing {enter}");
-        dana.cekDataList("Testing");
+        keyword.cariData("testing {enter}");
+        keyword.cekDataList("Testing");
     });
 
     it('Admin mengubah nama sumber dana', () => {
@@ -37,15 +39,15 @@ describe("+ Positif Case", () => {
         dana.cekDataList("Testing");
         dana.aksi("Ubah", "Testing");
         dana.inputSumberDana("Testing Lorem Ipsum");
-        dana.aksi("Simpan");
-        dana.alert("Ubah");
+        keyword.aksi("Simpan");
+        keyword.alert("Ubah", "Sumber Dana");
     });
 
     it('Admin menghapus data sumber dana', () => {
         dana.cariData("lorem ipsum{enter}");
         dana.aksi("Hapus", "Testing Lorem Ipsum");
         dana.hapusItem();
-        dana.alert("Hapus");
+        keyword.alert("Hapus", "Sumber Dana");
     });
 
 });
@@ -55,6 +57,6 @@ describe("+ Negatif Case", () => {
         dana.aksiTambah();
         dana.inputSumberDana(dataDana.listSumberDana[0]);
         dana.aksi("Simpan");
-        dana.alert("Duplikat");
+        keyword.alert("Duplikat", "Sumber Dana");
     });
 })

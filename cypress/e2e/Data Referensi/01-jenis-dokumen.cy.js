@@ -1,8 +1,10 @@
 import Login from "../../pages/auth/Login";
-import JenisDokumen from "../../pages/auth/data-pelengkap/JenisDokumen";
+import JenisDokumen from "../../pages/data-pelengkap/JenisDokumen";
+import Keyword from "../../pages/keyword";
 
 const login = new Login();
 const docs = new JenisDokumen();
+const keyword = new Keyword();
 let dataJenis;
 
 beforeEach(() => {
@@ -23,14 +25,14 @@ describe("+ Positif Case", () => {
         dataJenis.listJenisDokumen.forEach((data) => {
             docs.aksiTambah();
             docs.inputJenisDokumen(data);
-            docs.aksi("Simpan");
-            docs.alert("Simpan");
+            keyword.aksi("Simpan");
+            keyword.alert("Simpan", "Jenis Dokumen");
         });
     });
 
     it("Admin mencari data jenis dokumen", () => {
-        docs.cariData("testing {enter}");
-        docs.cekDataList("Testing");
+        keyword.cariData("testing {enter}");
+        keyword.cekDataList("Testing");
     });
 
     it("Admin mengubah nama jenis dokumen", () => {
@@ -38,23 +40,23 @@ describe("+ Positif Case", () => {
         docs.cekDataList("Testing");
         docs.aksi("Ubah", "Testing");
         docs.inputJenisDokumen("Testing Lorem Ipsum");
-        docs.aksi("Simpan");
-        docs.alert("Ubah");
+        keyword.aksi("Simpan");
+        keyword.alert("Ubah", "Jenis Dokumen");
     });
 
     it("Admin menghapus data jenis dokumentasi", () => {
         docs.cariData("lorem ipsum{enter}");
         docs.aksi("Hapus", "Testing Lorem Ipsum");
         docs.hapusItem();
-        docs.alert("Hapus");
+        keyword.alert("Hapus", "Jenis Dokumen");
     });
 
     it("Admin menghapus semua data", () => {
         docs.cariData("testing{enter}");
         docs.checkAll();
         docs.aksiHapusAll();
-        docs.hapusAll(); //fix me
-        docs.alert("Hapus");
+        docs.hapusAll();
+        keyword.alert("Hapus", "Jenis Dokumen");
     });
 });
 
@@ -62,7 +64,7 @@ describe("- Negatif Case", () => {
     it("Admin menambahkan data jenis dokumen dengan nama yang sama", () => {
         docs.aksiTambah();
         docs.inputJenisDokumen("Memorandum of Understanding (MoU)");
-        docs.aksi("Simpan");
-        docs.alert("Duplikat");
+        keyword.aksi("Simpan");
+        keyword.alert("Duplikat", "Jenis Dokumen");
     });
 });
