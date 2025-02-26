@@ -1,8 +1,10 @@
 import Login from "../../pages/auth/Login";
 import Mitra from "../../pages/mitra/Mitra";
+import Keyword from "../../pages/keyword";
 
 const login = new Login();
 const mitra = new Mitra();
+const keyword = new Keyword();
 let dataMitra;
 
 beforeEach(() => {
@@ -50,27 +52,27 @@ it("Admin menambahkan data mitra", () => {
             });
         })
         mitra.aksiSimpan();
-        mitra.alert("Simpan");
+        keyword.alert("Simpan", "Mitra");
         mitra.aksiKembalikelist()
     });
 });
 
 it('Admin mengubah data mitra', () => {
-    mitra.aksi("Detail", "Testing");
+    keyword.aksi("Detail", "Testing");
     mitra.aksiUbah();
     mitra.inputNamaMitra("Mitra Testing");
     mitra.aksiSimpan(); 
-    mitra.alert("Ubah");
+    keyword.alert("Ubah", "Mitra");
 });
 
 it('Admin mencari data mitra', () => {
-    mitra.cariData("Mitra Testing {enter}");
-    mitra.cekDataList("Mitra Testing");
+    keyword.cariData("Mitra Testing {enter}");
+    keyword.cekDataList("Mitra Testing");
 });
 
 it.only('Admin menghapus data mitra', () => {
-    mitra.cariData("Mitra Testing {enter}");
+    keyword.cariData("Mitra Testing {enter}");
     mitra.aksi("Hapus", "Mitra Testing");   
     mitra.hapusItem();
-    mitra.alert("Hapus");
+    keyword.alert("Hapus", "Mitra");
 });
