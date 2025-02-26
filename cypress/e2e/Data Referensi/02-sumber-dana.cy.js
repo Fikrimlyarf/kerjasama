@@ -35,9 +35,9 @@ describe("+ Positif Case", () => {
     });
 
     it('Admin mengubah nama sumber dana', () => {
-        dana.cariData("testing {enter}");
-        dana.cekDataList("Testing");
-        dana.aksi("Ubah", "Testing");
+        keyword.cariData("testing {enter}");
+        keyword.cekDataList("Testing");
+        keyword.aksi("Ubah", "Testing");
         dana.inputSumberDana("Testing Lorem Ipsum");
         keyword.aksi("Simpan");
         keyword.alert("Ubah", "Sumber Dana");
@@ -56,7 +56,7 @@ describe("+ Negatif Case", () => {
     it('Admin menambahkan data sumber dana dengan nama yang sama', () => {
         dana.aksiTambah();
         dana.inputSumberDana(dataDana.listSumberDana[0]);
-        dana.aksi("Simpan");
+        keyword.aksi("Simpan");
         keyword.alert("Duplikat", "Sumber Dana");
     });
 })

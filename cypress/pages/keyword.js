@@ -1,5 +1,4 @@
 class Keyword {
-
     cariData(cari) {
         cy.get('input[placeholder="Cari data ..."]')
             .should("be.visible")
@@ -70,7 +69,6 @@ class Keyword {
                 .should("be.visible");
         }
     }
-
 }
 
-export default Keyword
+export default Keyword;

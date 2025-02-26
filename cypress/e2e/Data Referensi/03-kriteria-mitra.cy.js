@@ -38,7 +38,7 @@ describe("+ Positif Case", () => {
     it('Admin mengubah nama kriteria mitra', () => {
         keyword.cariData("testing {enter}");
         keyword.cekDataList("Testing");
-        kriteria.aksi("Ubah", "Testing");
+        keyword.aksi("Ubah", "Testing");
         kriteria.inputKriteriaMitra("Testing Lorem Ipsum");
         kriteria.inputKeterangan("Lorem Ipsum");
         keyword.aksi("Simpan");
@@ -58,7 +58,7 @@ describe("+ Negatif Case", () => {
         kriteria.aksiTambah();
         kriteria.inputKriteriaMitra(dataKriteria.listKriteriaMitra[0].kriteria);
         kriteria.inputKeterangan(dataKriteria.listKriteriaMitra[0].keterangan);
-        kriteria.aksi("Simpan");
+        keyword.aksi("Simpan");
         keyword.alert("Duplikat", "Kriteria Mitra");
     });
 })
