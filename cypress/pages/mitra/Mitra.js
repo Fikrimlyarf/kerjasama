@@ -77,26 +77,6 @@ class Mitra {
             .type(value);
     }
 
-    cariData(cari) {
-        cy.get('input[placeholder="Cari data ..."]')
-            .should("be.visible")
-            .type(cari);
-    }
-
-    cekDataList(cari) {
-        cy.get("td").parent().contains(cari).should("be.visible");
-    }
-
-    autoSelected(elm, value) {
-        cy.get("[" + elm + "]")
-            .next()
-            .click();
-        cy.get(".select2-search__field").type(value);
-        cy.get(".select2-results__options")
-            .contains(value)
-            .click({ force: true });
-    }
-
     aksi(aksi, mitra) {
         let classButton;
 
@@ -118,25 +98,6 @@ class Mitra {
         }
     }
 
-    alert(alert) {
-        if (alert == "Simpan") {
-            cy.get(".alert")
-                .contains("Berhasil menambah data Mitra")
-                .should("be.visible");
-        } else if (alert == "Ubah") {
-            cy.get(".alert")
-                .contains("Berhasil mengubah data Mitra")
-                .should("be.visible");
-        } else if (alert == "Hapus") {
-            cy.get(".alert")
-                .contains(" Berhasil menghapus data Mitra")
-                .should("be.visible");
-        } else if (alert == "Duplikat") {
-            cy.get(".invalid-feedback")
-                .contains("Mitra sudah ada sebelumnya.")
-                .should("be.visible");
-        }
-    }
 }
 
 export default Mitra;

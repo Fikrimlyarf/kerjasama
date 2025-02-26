@@ -24,20 +24,20 @@ it("Admin menambahkan data mitra", () => {
         mitra.aksiTambah();
         mitra.pilihJenisMitra(data.jenisMitra);
         mitra.inputNamaMitra(data.namaMitra);
-        mitra.autoSelected('name="id_kriteria_mitra"', data.kriteria);
+        keyword.autoSelected('name="id_kriteria_mitra"', data.kriteria);
         mitra.inputNoIzin(data.noIzin);
         mitra.inputNpwp(data.npwp);
         mitra.pilihLingkup(data.lingkup);
         if (data.lingkup === "Regional" || data.lingkup === "Nasional") {
             cy.wait(1000);
-            mitra.autoSelected('name="id_provinsi"', data.provinsi);
+            keyword.autoSelected('name="id_provinsi"', data.provinsi);
             cy.wait(1000);
-            mitra.autoSelected('name="id_kota"', data.kota);
+            keyword.autoSelected('name="id_kota"', data.kota);
             cy.wait(1000);
-            mitra.autoSelected('name="id_kecamatan"', data.kecamatan);
+            keyword.autoSelected('name="id_kecamatan"', data.kecamatan);
             cy.wait(1000);
         } else if (data.lingkup === "Internasional") {
-            mitra.autoSelected('name="id_negara"', data.negara);
+            keyword.autoSelected('name="id_negara"', data.negara);
         }
         mitra.inputKodePos(data.pos);
         mitra.inputAlamat(data.alamat);
@@ -70,7 +70,7 @@ it('Admin mencari data mitra', () => {
     keyword.cekDataList("Mitra Testing");
 });
 
-it.only('Admin menghapus data mitra', () => {
+it('Admin menghapus data mitra', () => {
     keyword.cariData("Mitra Testing {enter}");
     mitra.aksi("Hapus", "Mitra Testing");   
     mitra.hapusItem();
