@@ -1,49 +1,55 @@
 {
-    "kerjasama": {
-        "nomorKerjasama": "KRJ/SM-01/FOX-25",
-        "nomorMitra": "",
-        "jenisDokumen": "Memorandum of Understanding (MoU)",
-        "mitra": "Google Academy Indonesia",
-        "judul": "Pengembangan Teknologi",
-        "unit": "S1 - PSKGJ Pendidikan Bahasa dan Sastra Indonesia",
-        "bentuk": "Pengembangan Pusat Penelitian dan Pengembangan Keilmuan",
-        "sasaran": "prodi mampu mempelajari dan menerapkan teknologi yang sudah dikembangkan oleh google academy indonesia",
-        "dana": "Anggaran dari Direktorat Riset, Teknologi, dan Pengabdian kepada Masyarakat (BOPTN Penelitian Competitive Fund)",
-        "anggaran": "Rp10.000.000",
-        "tglMulai": "01 Februari 2025",
-        "tglAkhir": "24 Februari 2025",
-        "status": "Aktif"
-    },
-    "penanggungJawab": {
-        "pihakKe1": {
-            "pihak": "Unit Kerja S1 - PSKGJ Pendidikan Bahasa dan Sastra Indonesia",
-            "alamat": "Rungkut",
-            "pj": [
-                {
-                    "nama": "Kahlil Gibran",
-                    "jabatan": "Kepala Bagian IT",
-                    "email": "kahlilgan@yopmail.com",
-                    "noTelepon": "081000000009"
-                }
-            ]
-        },
-        "pihakKe2": {
-            "pihak": "Mitra Google Academy Indonesia",
-            "alamat": "Jakarta SCBD",
-            "pj": [
-                {
-                    "nama": "John D'Kortos",
-                    "jabatan": "Kepala Riset Teknologi",
-                    "email": "d'kortos@gmail.com",
-                    "noTelepon": "081000000008"
-                },
-                {
-                    "nama": "John Cena",
-                    "jabatan": "Asisten Kepala Riset Teknologi",
-                    "email": "cena@gmail.com",
-                    "noTelepon": "081000000007"
-                }
-            ]
+    "listKerjasama": [
+        {
+            "noKerjasama": "KRJ/SM-01/FOX-25",
+            "noMitra": "1234",
+            "jenisDokumen": "Memorandum of Understanding (MoU)",
+            "unit": "S1 - Pendidikan Teknologi Informasi",
+            "mitra": "Sevima",
+            "judul": "Pengembangan Teknologi",
+            "deskripsi": "Kerjasama ini bertujuan untuk mengembangkan teknologi yang sudah ada di google academy",
+            "dana": "Anggaran dari Direktorat Riset, Teknologi, dan Pengabdian kepada Masyarakat (BOPTN Penelitian Competitive Fund)",
+            "anggaran": "10000000",
+            "tglAwal": "2025-01-01",
+            "tglAkhir": "2025-12-31",
+            "status": "Aktif",
+            "pihak1": "Unit",
+            "alamat": "Rungkut"            
         }
+    ],
+    "penanggungJawab": {
+        "pj1": [
+            {
+                "nama_penanggung_jawab": "Kahlil Gibran",
+                "jabatan": "Kepala Bagian IT",
+                "nip": "14045",
+                "email": "kahlil@yopmail.com",
+                "telepon": "081000000001"
+            },
+            {
+                "nama_penanggung_jawab": "Stevie Ray Vaughan",
+                "jabatan": "Staff IT",
+                "nip": "14041",
+                "email": "srv@yopmail.com",
+                "telepon": "081000000002"
+            }
+        ],
+
+        "pj2": [
+            {
+                "nama_penanggung_jawab": "John D'Kortos",
+                "jabatan": "Kepala Riset Teknologi",
+                "nip": "102030",
+                "email": "d'kortos@gmail.com",
+                "telepon": "081000000002"
+            },
+            {
+                "nama_penanggung_jawab": "John Cena",
+                "jabatan": "Asisten Kepala Riset Teknologi",
+                "nip": "405060",
+                "email": "cena@gmail.com",
+                "telepon": "081000000003"
+            }
+        ]
     }
 }
