@@ -5,7 +5,7 @@
             "noMitra": "1234",
             "jenisDokumen": "Memorandum of Understanding (MoU)",
             "unit": "S1 - Pendidikan Teknologi Informasi",
-            "mitra": "Sevima",
+            "mitra": "Google Academy",
             "judul": "Pengembangan Teknologi",
             "deskripsi": "Kerjasama ini bertujuan untuk mengembangkan teknologi yang sudah ada di google academy",
             "dana": "Anggaran dari Direktorat Riset, Teknologi, dan Pengabdian kepada Masyarakat (BOPTN Penelitian Competitive Fund)",
@@ -14,6 +14,22 @@
             "tglAkhir": "2025-12-31",
             "status": "Aktif",
             "pihak1": "Unit",
+            "alamat": "Rungkut"            
+        },
+        {
+            "noKerjasama": "KRJ/SM-01/FOX-26",
+            "noMitra": "5678",
+            "jenisDokumen": "Memorandum of Agreement (MoA)",
+            "unit": "Fakultas Keguruan dan Ilmu Pendidikan",
+            "mitra": "Sevima",
+            "judul": "Magang MBKM",
+            "deskripsi": "Magang MBKM diharapkan dosen atau mahasiswa dapat mengetahui penerapan teknologi pada industri",
+            "dana": "Dana Hibah",
+            "anggaran": " ",
+            "tglAwal": "2025-01-01",
+            "tglAkhir": "2025-12-31",
+            "status": "Aktif",
+            "pihak1": "Mitra",
             "alamat": "Rungkut"            
         }
     ],

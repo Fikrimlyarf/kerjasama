@@ -66,12 +66,12 @@ it('Admin mengubah data mitra', () => {
 });
 
 it('Admin mencari data mitra', () => {
-    keyword.cariData("Mitra Testing {enter}");
+    keyword.cariData("Mitra Testing");
     keyword.cekDataList("Mitra Testing");
 });
 
 it('Admin menghapus data mitra', () => {
-    keyword.cariData("Mitra Testing {enter}");
+    keyword.cariData("Mitra Testing");
     mitra.aksi("Hapus", "Mitra Testing");   
     mitra.hapusItem();
     keyword.alert("Hapus", "Mitra");

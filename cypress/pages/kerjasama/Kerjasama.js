@@ -3,8 +3,16 @@ class Kerjasama {
         cy.contains("Kerjasama").should("be.visible").click();
     }
 
+    visitListPage() {
+        cy.contains("List Kegiatan").should("be.visible").click();
+    }
+
     aksiTambah() {
         cy.contains("Tambah Data").should("be.visible").click();
+    }
+
+    aksiTambahKegiatan() {
+        cy.contains("Tambah Data Kegiatan").should("be.visible").click();
     }
 
     aksiSimpan() {

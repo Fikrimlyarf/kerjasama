@@ -36,9 +36,9 @@ describe("+ Positif Case", () => {
     });
 
     it("Admin mengubah nama jenis dokumen", () => {
-        docs.cariData("testing {enter}");
-        docs.cekDataList("Testing");
-        docs.aksi("Ubah", "Testing");
+        keyword.cariData("testing {enter}");
+        keyword.cekDataList("Testing");
+        keyword.aksi("Ubah", "Testing");
         docs.inputJenisDokumen("Testing Lorem Ipsum");
         keyword.aksi("Simpan");
         keyword.alert("Ubah", "Jenis Dokumen");
@@ -51,11 +51,11 @@ describe("+ Positif Case", () => {
         keyword.alert("Hapus", "Jenis Dokumen");
     });
 
-    it("Admin menghapus semua data", () => {
-        docs.cariData("testing{enter}");
-        docs.checkAll();
+    it.only("Admin menghapus semua data", () => {
+        keyword.cariData("testing{enter}");
+        keyword.checkAll();
         docs.aksiHapusAll();
-        docs.hapusAll();
+        keyword.hapusAll();
         keyword.alert("Hapus", "Jenis Dokumen");
     });
 });

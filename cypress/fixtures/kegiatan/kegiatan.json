@@ -1,0 +1,84 @@
+{
+    "kegiatan": [
+        {
+            "induk": "Pengembangan Teknologi",
+            "noDokumen": "1234",
+            "noMitra": "5678",
+            "unit": "S1 - Pendidikan Teknologi Informasi",
+            "judul": "Kegiatan Baru",
+            "bentuk": "Penelitian - Pengembangan Pusat Penelitian dan Pengembangan Keilmuan",
+            "sasaran": "Meningkatnya program studi yang berkualitas",
+            "indikator": "IKK 2.5.2.1 Persentase Prodi bekerjasama dengan mitra",
+            "tglAwal": "2025-01-01",
+            "tglAkhir": "2025-12-31",
+            "hasil": "Hasil Kegiatan Baru",
+            "nilaiKontrak": "15000000",
+            "tautan": "https://quantum.sevima.com/v3.0.0/pages/components/symbols-v1.0.0.html"
+        },
+        {
+            "induk": "Magang MBKM",
+            "noDokumen": "002130",
+            "noMitra": "3981310801238",
+            "unit": "S1 - Pendidikan Teknologi Informasi",
+            "judul": "Mahasiswa melakukan magang ke perusahaan",
+            "bentuk": "Penelitian - Pengembangan Pusat Penelitian dan Pengembangan Keilmuan",
+            "sasaran": "Meningkatnya program studi yang berkualitas",
+            "indikator": "IKK 2.5.2.1 Persentase Prodi bekerjasama dengan mitra",
+            "tglAwal": "2025-01-01",
+            "tglAkhir": "2025-12-31",
+            "hasil": "Hasil Kegiatan Baru bisa dilihat setalah sandiwara ini",
+            "nilaiKontrak": "15000000",
+            "tautan": "https://quantum.sevima.com/v3.0.0/pages/components/symbols-v1.0.0.html"
+        },
+        {
+            "induk": "Magang MBKM",
+            "noDokumen": "983423401",
+            "noMitra": "27387129318",
+            "unit": "S1 - Teknik Elektro",
+            "judul": "Dosen melakukan magang ke perusahaan",
+            "bentuk": "Penelitian - Pengembangan Pusat Penelitian dan Pengembangan Keilmuan",
+            "sasaran": "Meningkatnya program studi yang berkualitas",
+            "indikator": "IKK 2.5.2.1 Persentase Prodi bekerjasama dengan mitra",
+            "tglAwal": "2025-01-01",
+            "tglAkhir": "2025-12-31",
+            "hasil": "Hasil Kegiatan Baru saja dilakukan",
+            "nilaiKontrak": "15000000",
+            "tautan": "https://quantum.sevima.com/v3.0.0/pages/components/symbols-v1.0.0.html"
+        }
+    ],
+
+    "penanggungJawab": [
+        [
+            {
+                "nama_penanggung_jawab": "Kahlil Gibran",
+                "jabatan": "Kepala Bagian IT",
+                "nip": "14045",
+                "email": "kahlil@yopmail.com",
+                "telepon": "081000000001"
+            },
+            {
+                "nama_penanggung_jawab": "Stevie Ray Vaughan",
+                "jabatan": "Staff IT",
+                "nip": "14041",
+                "email": "srv@yopmail.com",
+                "telepon": "081000000002"
+            }
+        ],
+        [
+            {
+                "nama_penanggung_jawab": "John D'Kortos",
+                "jabatan": "Kepala Riset Teknologi",
+                "nip": "102030",
+                "email": "d'kortos@gmail.com",
+                "telepon": "081000000002"
+            },
+            {
+                "nama_penanggung_jawab": "John Cena",
+                "jabatan": "Asisten Kepala Riset Teknologi",
+                "nip": "405060",
+                "email": "cena@gmail.com",
+                "telepon": "081000000003"
+            }
+        ]
+    ]
+}

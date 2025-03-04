@@ -66,4 +66,9 @@ describe("+ Positif Case", () => {
             kerma.aksiSimpan();
         });
     });
+
+    it.only('Admin mencari data kerjasama', () => {
+        keyword.cariData("Pengembangan Teknologi {enter}");
+        keyword.cekDataList("Pengembangan Teknologi");
+    });
 });

@@ -10,7 +10,7 @@ class JenisDokumen {
 
     aksiHapusAll() {
         cy.get("#button_delete").should("be.visible").click();
-    }
+    }   
 
     inputJenisDokumen(namadokumen) {
         cy.get("#form-control-jenis_dokumen").clear().type(namadokumen);

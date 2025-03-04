@@ -2,15 +2,23 @@ class Keyword {
     cariData(cari) {
         cy.get('input[placeholder="Cari data ..."]')
             .should("be.visible")
-            .type(cari);
+            .type(cari).type("{enter}");
     }
 
     cekDataList(cari) {
         cy.get("td").parent().contains(cari).should("be.visible");
     }
 
+    checkAll() {
+        cy.get('[name="group-all"]').click();
+    }
+
     hapusItem() {
         cy.get("#delete-button").should("be.visible").click();
+    }
+    
+    hapusAll() {    
+        cy.get('#delete-many-button').should("be.visible").click();
     }
 
     autoSelected(elm, value) {
