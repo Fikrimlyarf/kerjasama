@@ -1,0 +1,101 @@
+{
+    "kerjasama": [
+        {
+            "noKerjasama": "KRJ/SM-01/FOX-25",
+            "noMitra": "1234",
+            "jenisDokumen": "Memorandum of Understanding (MoU)",
+            "unit": "S1 - Pendidikan Teknologi Informasi",
+            "mitra": "Google Academy",
+            "judul": "Pengembangan Teknologi",
+            "deskripsi": "Kerjasama ini bertujuan untuk mengembangkan teknologi yang sudah ada di google academy",
+            "dana": "Anggaran dari Direktorat Riset, Teknologi, dan Pengabdian kepada Masyarakat (BOPTN Penelitian Competitive Fund)",
+            "anggaran": "10000000",
+            "tglAwal": "2025-01-01",
+            "tglAkhir": "2025-12-31",
+            "status": "Aktif",
+            "pihak1": "Unit",
+            "alamat": "Rungkut",
+            "kegiatan": [
+                {
+                    "induk": "Pengembangan Teknologi",
+                    "noDokumen": "1234",
+                    "noMitra": "5678",
+                    "unit": "S1 - Pendidikan Teknologi Informasi",
+                    "judul": "Observasi teknologi google untuk industri",
+                    "bentuk": "Penelitian - Pengembangan Pusat Penelitian dan Pengembangan Keilmuan",
+                    "sasaran": "Meningkatnya program studi yang berkualitas",
+                    "indikator": "IKK 2.5.2.1 Persentase Prodi bekerjasama dengan mitra",
+                    "tglAwal": "2025-01-01",
+                    "tglAkhir": "2025-12-31",
+                    "hasil": "Laporan observasi teknologi google",
+                    "nilaiKontrak": "15000000",
+                    "tautan": "https://quantum.sevima.com/v3.0.0/pages/components/symbols-v1.0.0.html"
+                },
+                {
+                    "induk": "Pengembangan Teknologi",
+                    "noDokumen": "218390",
+                    "noMitra": "375892",
+                    "unit": "S1 - Student Exchange",
+                    "judul": "Study Tour ke Google Academy untuk mengetahui tren teknologi",
+                    "bentuk": "Penelitian - Pengembangan Pusat Penelitian dan Pengembangan Keilmuan",
+                    "sasaran": "Meningkatnya program studi yang berkualitas",
+                    "indikator": "IKK 2.5.2.1 Persentase Prodi bekerjasama dengan mitra",
+                    "tglAwal": "2025-01-01",
+                    "tglAkhir": "2025-12-31",
+                    "hasil": "Laporan study tour ke google academy",
+                    "nilaiKontrak": "25000000",
+                    "tautan": "https://quantum.sevima.com/v3.0.0/pages/components/symbols-v1.0.0.html"
+                }
+
+            ]
+        },
+        {
+            "noKerjasama": "KRJ/SM-01/FOX-26",
+            "noMitra": "5678",
+            "jenisDokumen": "Memorandum of Agreement (MoA)",
+            "unit": "Fakultas Keguruan dan Ilmu Pendidikan",
+            "mitra": "Sevima",
+            "judul": "Magang MBKM",
+            "deskripsi": "Magang MBKM diharapkan dosen atau mahasiswa dapat mengetahui penerapan teknologi pada industri",
+            "dana": "Dana Hibah",
+            "anggaran": " ",
+            "tglAwal": "2025-01-01",
+            "tglAkhir": "2025-12-31",
+            "status": "Aktif",
+            "pihak1": "Mitra",
+            "alamat": "Rungkut",
+            "kegiatan" :[
+                {
+                    "induk": "Magang MBKM",
+                    "noDokumen": "983423401",
+                    "noMitra": "27387129318",
+                    "unit": "S1 - Pendidikan Teknologi Informasi",
+                    "judul": "Mahasiswa melakukan magang ke perusahaan",
+                    "bentuk": "Penelitian - Pengembangan Pusat Penelitian dan Pengembangan Keilmuan",
+                    "sasaran": "Meningkatnya program studi yang berkualitas",
+                    "indikator": "IKK 2.5.2.1 Persentase Prodi bekerjasama dengan mitra",
+                    "tglAwal": "2025-01-01",
+                    "tglAkhir": "2025-12-31",
+                    "hasil": "Laporan mahasiswa magang",
+                    "nilaiKontrak": "5000000",
+                    "tautan": "https://quantum.sevima.com/v3.0.0/pages/components/symbols-v1.0.0.html"
+                },
+                {
+                    "induk": "Magang MBKM",
+                    "noDokumen": "983423401",
+                    "noMitra": "27387129318",
+                    "unit": "S1 - Pendidikan Teknologi Informasi",
+                    "judul": "Dosen melakukan magang ke perusahaan",
+                    "bentuk": "Penelitian - Pengembangan Pusat Penelitian dan Pengembangan Keilmuan",
+                    "sasaran": "Meningkatnya program studi yang berkualitas",
+                    "indikator": "IKK 2.5.2.1 Persentase Prodi bekerjasama dengan mitra",
+                    "tglAwal": "2025-01-01",
+                    "tglAkhir": "2025-12-31",
+                    "hasil": "Laporan dosen magang",
+                    "nilaiKontrak": "15000000",
+                    "tautan": "https://quantum.sevima.com/v3.0.0/pages/components/symbols-v1.0.0.html"
+                }
+            ]          
+        }
+    ]
+}
