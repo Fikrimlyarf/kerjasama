@@ -27,7 +27,7 @@ describe("+ Positif Case", () => {
     it("Admin menambahkan data kegiatan dari menu kegiatan", () => {
         kegiatan.visitPage();
         kegiatan.aksiTambah();
-        keyword.autoSelected('name="id_parent"', dataKegiatan.kegiatan[0].induk);
+        keyword.autoSelected('name="id_induk_kerjasama"', dataKegiatan.kegiatan[0].induk);
         cy.wait(1000);
         kegiatan.inputDokumenKegiatan(dataKegiatan.kegiatan[0].noDokumen);
         kegiatan.inputDokumenMitra(dataKegiatan.kegiatan[0].noMitra);

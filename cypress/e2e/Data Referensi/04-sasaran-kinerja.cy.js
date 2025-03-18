@@ -41,12 +41,12 @@ describe("+ Positif Case", () => {
     });
 
     it("Admin mencari data sasaran kinerja", () => {
-        keyword.cariData("testing {enter}");
+        keyword.cariData("testing");
         keyword.cekDataList("Testing");
     });
 
     it("Admin mengubah data sasaran kinerja", () => {
-        keyword.cariData("testing {enter}");
+        keyword.cariData("testing");
         keyword.cekDataList("Testing");
         keyword.aksi("Detail", "Testing");
         sasaran.aksiUbahData()
@@ -56,7 +56,7 @@ describe("+ Positif Case", () => {
     });
 
     it('Admin menghapus data sasaran kinerja', () => {
-        keyword.cariData("lorem ipsum{enter}");
+        keyword.cariData("lorem ipsum");
         keyword.aksi("Hapus", "Testing Lorem Ipsum");
         keyword.hapusItem();
         keyword.alert("Hapus", "Sasaran Kinerja");

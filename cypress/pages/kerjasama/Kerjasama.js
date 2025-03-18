@@ -4,7 +4,7 @@ class Kerjasama {
     }
 
     visitListPage() {
-        cy.contains("List Kegiatan").should("be.visible").click();
+        cy.contains("Daftar Kegiatan").should("be.visible").click();
     }
 
     aksiTambah() {

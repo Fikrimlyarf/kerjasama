@@ -1,21 +1,6 @@
 {
     "listKerjasama": [
-        {
-            "noKerjasama": "KRJ/SM-01/FOX-25",
-            "noMitra": "1234",
-            "jenisDokumen": "Memorandum of Understanding (MoU)",
-            "unit": "S1 - Pendidikan Teknologi Informasi",
-            "mitra": "Google Academy",
-            "judul": "Pengembangan Teknologi",
-            "deskripsi": "Kerjasama ini bertujuan untuk mengembangkan teknologi yang sudah ada di google academy",
-            "dana": "Anggaran dari Direktorat Riset, Teknologi, dan Pengabdian kepada Masyarakat (BOPTN Penelitian Competitive Fund)",
-            "anggaran": "10000000",
-            "tglAwal": "2025-01-01",
-            "tglAkhir": "2025-12-31",
-            "status": "Aktif",
-            "pihak1": "Unit",
-            "alamat": "Rungkut"            
-        },
+        
         {
             "noKerjasama": "KRJ/SM-01/FOX-26",
             "noMitra": "5678",

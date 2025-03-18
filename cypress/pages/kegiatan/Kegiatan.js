@@ -13,9 +13,7 @@ class Kegiatan {
 
     aksiTambahPenanggungJawab(pihak) {
         cy.contains(`Tambah Penanggung Jawab Pihak ke ${pihak}`).should("be.visible").click();    
-    }
-
-    
+    }    
 
     inputDokumenKegiatan(dokumen) {
         cy.get('#form-control-nomor_dokumen').clear().type(dokumen);
@@ -26,7 +24,7 @@ class Kegiatan {
     }
 
     inputJudulKegiatan(judul) {
-        cy.get('#form-control-judul_kerjasama').clear().type(judul);
+        cy.get('#form-control-judul_kegiatan').clear().type(judul);
     }
 
     tglAwal(tglAwal) {

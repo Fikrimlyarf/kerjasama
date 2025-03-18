@@ -53,7 +53,7 @@ it("Admin menambahkan data mitra", () => {
         })
         mitra.aksiSimpan();
         keyword.alert("Simpan", "Mitra");
-        mitra.aksiKembalikelist()
+        mitra.visitPage();
     });
 });
 

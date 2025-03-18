@@ -30,12 +30,12 @@ describe("+ Positif Case", () => {
     });
 
     it('Admin mencari data sumber dana', () => {
-        keyword.cariData("testing {enter}");
+        keyword.cariData("testing");
         keyword.cekDataList("Testing");
     });
 
     it('Admin mengubah nama sumber dana', () => {
-        keyword.cariData("testing {enter}");
+        keyword.cariData("testing");
         keyword.cekDataList("Testing");
         keyword.aksi("Ubah", "Testing");
         dana.inputSumberDana("Testing Lorem Ipsum");
@@ -44,7 +44,7 @@ describe("+ Positif Case", () => {
     });
 
     it('Admin menghapus data sumber dana', () => {
-        keyword.cariData("lorem ipsum{enter}");
+        keyword.cariData("lorem ipsum");
         keyword.aksi("Hapus", "Testing Lorem Ipsum");
         keyword.hapusItem();
         keyword.alert("Hapus", "Sumber Dana");

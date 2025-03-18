@@ -21,7 +21,7 @@ beforeEach(() => {
 });
 
 describe("+ Positif Case", () => {
-    it("Admin menambahkan data kerjasama", () => {
+    it.only("Admin menambahkan data kerjasama", () => {
         dataKerma.listKerjasama.forEach((data) => {
             kerma.aksiTambah();
             keyword.autoSelected('name="id_unit_kerja"', data.unit);
@@ -67,7 +67,7 @@ describe("+ Positif Case", () => {
         });
     });
 
-    it.only('Admin mencari data kerjasama', () => {
+    it('Admin mencari data kerjasama', () => {
         keyword.cariData("Pengembangan Teknologi {enter}");
         keyword.cekDataList("Pengembangan Teknologi");
     });

@@ -1,7 +1,7 @@
 {
     "listMitra": [
         {
-            "jenisMitra": "Instansi",
+            "jenisMitra": "Non Perguruan Tinggi",
             "namaMitra": "Google Academy",
             "kriteria": "Perusahaan multinasional",
             "noIzin": "GOOGLE/01",
@@ -18,7 +18,7 @@
             "website": "google.com"
         },
         {
-            "jenisMitra": "Instansi",
+            "jenisMitra": "Non Perguruan Tinggi",
             "namaMitra": "Sevima",
             "noIzin": "SVM/01",
             "npwp": "070809101112",
@@ -52,7 +52,7 @@
             "website": "https://u-paris.fr/en/"
         },
         {
-            "jenisMitra": "Instansi",
+            "jenisMitra": "Non Perguruan Tinggi",
             "namaMitra": "Kampung Durian Runtuh",
             "noIzin": "Desa Durian Runtuh/01",
             "npwp": "D354 Du214n",
@@ -69,7 +69,7 @@
             "website": "https://domestic.safariprigen.com/"
         },
         {
-            "jenisMitra": "Instansi",
+            "jenisMitra": "Non Perguruan Tinggi",
             "namaMitra": "Testing",
             "noIzin": "Testing",
             "npwp": "Testing",

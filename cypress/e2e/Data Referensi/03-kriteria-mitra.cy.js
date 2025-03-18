@@ -31,12 +31,12 @@ describe("+ Positif Case", () => {
     });
 
     it('Admin mencari data kriteria mitra', () => {
-        keyword.cariData("testing {enter}");
+        keyword.cariData("testing");
         keyword.cekDataList("Testing");
     });
 
     it('Admin mengubah nama kriteria mitra', () => {
-        keyword.cariData("testing {enter}");
+        keyword.cariData("testing");
         keyword.cekDataList("Testing");
         keyword.aksi("Ubah", "Testing");
         kriteria.inputKriteriaMitra("Testing Lorem Ipsum");
@@ -46,7 +46,7 @@ describe("+ Positif Case", () => {
     });
 
     it('Admin menghapus data kriteria mitra', () => {
-        keyword.cariData("lorem ipsum{enter}");
+        keyword.cariData("lorem ipsum");
         keyword.aksi("Hapus", "Testing Lorem Ipsum");
         keyword.hapusItem();
         keyword.alert("Hapus", "Kriteria Mitra");

@@ -49,6 +49,7 @@ class Keyword {
         if (aksi === "Ubah" || aksi === "Hapus" || aksi === "Detail") {
             cy.get("td")
                 .contains(data)
+                // .parent() // digunakan ketika running ubah hapus sasaran kinerja
                 .should("be.visible")
                 .parent()
                 .find(`.sym.sym-${classButton}-solid`)
