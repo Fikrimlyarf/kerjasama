@@ -10,7 +10,7 @@ let dataJenis;
 beforeEach(() => {
     login.visit();
     login.user("Admin Support");
-    login.konfirmasiLogin();
+    // login.konfirmasiLogin();
     login.pilihModul("Admin Support Sevima", "Kerjasama");
     docs.visitPage();
 
@@ -18,6 +18,10 @@ beforeEach(() => {
         dataJenis = data;
     });
 
+});
+
+it.only('tes login', () => {
+    
 });
 
 describe("+ Positif Case", () => {
