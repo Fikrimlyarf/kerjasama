@@ -62,9 +62,9 @@ describe("+ Positif Case", () => {
 describe("+ Negatif Case", () => {
     it("Admin menambahkan data bentuk kegiatan dengan nama yang sama", () => {      
         bentuk.aksiTambah();
-        bentuk.pilihJenis('name="id_jenis_kegiatan"', dataBentukKegiatan.listBentukKegiatan[0].jenis); //fix me
-        bentuk.inputBentukKegiatan(dataBentukKegiatan.listBentukKegiatan[0].bentukKegiatan);
-        bentuk.inputKeterangan(dataBentukKegiatan.listBentukKegiatan[0].keterangan);
+        bentuk.pilihJenis('name="id_jenis_kegiatan"', 'Penelitian');
+        bentuk.inputBentukKegiatan("Pengembangan Pusat Penelitian dan Pengembangan Keilmuan");
+        bentuk.inputKeterangan("Melakukan penelitian dan pengembangan untuk kepentingan pendidikan");
         keyword.aksi("Simpan");
         keyword.alert("Duplikat", "Bentuk Kegiatan");
     });

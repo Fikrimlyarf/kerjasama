@@ -66,9 +66,9 @@ describe("+ Positif Case", () => {
 describe("+ Negatif Case", () => {
     it('Admin menambahkan data sasaran kinerja dengan nama yang sama', () => {
         sasaran.aksiTambah();
-        sasaran.inputSasaranKinerja(dataSasaran.listSasaran[0].namaSasaran);
-        sasaran.inputKeterangan(dataSasaran.listSasaran[0].keterangan);
-        sasaran.inputLevel(dataSasaran.listSasaran[0].level);
+        sasaran.inputSasaranKinerja("Meningkatnya program studi yang berkualitas");
+        sasaran.inputKeterangan("Pengembangan program studi dilakukan dengan mengacu pada standar nasional maupun internasional, peningkatan akreditasi, serta penyediaan sarana dan prasarana yang menunjang pembelajaran berkualitas.");
+        sasaran.inputLevel("Prioritas Kementrian");
         dataSasaran.listSasaran[0].detail.forEach((xyz, index) => {
             Object.keys(xyz).forEach((key) => {
                 sasaran.inputIndikator(xyz[key], index, key);

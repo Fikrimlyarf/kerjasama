@@ -56,7 +56,7 @@ describe("+ Positif Case", () => {
 describe("+ Negatif Case", () => {
     it('Admin menambahkan data kriteria mitra dengan nama yang sama', () => {
         kriteria.aksiTambah();
-        kriteria.inputKriteriaMitra(dataKriteria.listKriteriaMitra[0].kriteria);
+        kriteria.inputKriteriaMitra("Dunia Usaha");
         kriteria.inputKeterangan(dataKriteria.listKriteriaMitra[0].keterangan);
         keyword.aksi("Simpan");
         keyword.alert("Duplikat", "Kriteria Mitra");
