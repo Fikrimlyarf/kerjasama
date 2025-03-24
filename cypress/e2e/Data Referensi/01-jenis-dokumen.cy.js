@@ -20,10 +20,6 @@ beforeEach(() => {
 
 });
 
-it.only('tes login', () => {
-    
-});
-
 describe("+ Positif Case", () => {
     it("Admin menambahkan data jenis dokumen", () => {
         dataJenis.listJenisDokumen.forEach((data) => {
