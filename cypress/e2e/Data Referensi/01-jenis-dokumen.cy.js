@@ -9,9 +9,9 @@ let dataJenis;
 
 beforeEach(() => {
     login.visit();
-    login.user("Admin Support");
+    login.user("Admin Kerjasama");
     // login.konfirmasiLogin();
-    login.pilihModul("Admin Support Sevima", "Kerjasama");
+    login.pilihModul("Admin Kerjasama", "Kerjasama");
     docs.visitPage();
 
     cy.fixture("data-referensi/jenis_dokumen").then((data) => {

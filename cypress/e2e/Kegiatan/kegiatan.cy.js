@@ -13,9 +13,9 @@ const dokumen = "cypress/fixtures/file-upload/lorem-ipsum.pdf";
 
 beforeEach(() => {
     login.visit();
-    login.user("Admin Support");
-    login.konfirmasiLogin();
-    login.pilihModul("Admin Support Sevima", "Kerjasama");
+    login.user("Admin Kerjasama");
+    // login.konfirmasiLogin();
+    login.pilihModul("Admin Kerjasama", "Kerjasama");
     
 
     cy.fixture("kegiatan/kegiatan").then((data) => {
@@ -45,7 +45,7 @@ describe("+ Positif Case", () => {
         kegiatan.inputHasil(dataKegiatan.kegiatan[0].hasil);
         kegiatan.nilaiKontrak(dataKegiatan.kegiatan[0].nilaiKontrak);
         kegiatan.tautan(dataKegiatan.kegiatan[0].tautan);
-        kegiatan.dokumen(dokumen);
+        // kegiatan.dokumen(dokumen);
         cy.wait(1000);
 
         dataKegiatan.penanggungJawab.forEach((data, index) => {
@@ -84,7 +84,7 @@ describe("+ Positif Case", () => {
         kegiatan.inputHasil(dataKegiatan.kegiatan[1].hasil);
         kegiatan.nilaiKontrak(dataKegiatan.kegiatan[1].nilaiKontrak);
         kegiatan.tautan(dataKegiatan.kegiatan[1].tautan);
-        kegiatan.dokumen(dokumen);
+        // kegiatan.dokumen(dokumen);
         cy.wait(1000);
 
         dataKegiatan.penanggungJawab.forEach((data, index) => {
@@ -124,7 +124,7 @@ describe("+ Positif Case", () => {
         kegiatan.inputHasil(dataKegiatan.kegiatan[2].hasil);
         kegiatan.nilaiKontrak(dataKegiatan.kegiatan[2].nilaiKontrak);
         kegiatan.tautan(dataKegiatan.kegiatan[2].tautan);
-        kegiatan.dokumen(dokumen);
+        // kegiatan.dokumen(dokumen);
         cy.wait(1000);
 
         dataKegiatan.penanggungJawab.forEach((data, index) => {

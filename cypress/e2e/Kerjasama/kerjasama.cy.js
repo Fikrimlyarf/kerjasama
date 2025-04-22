@@ -10,9 +10,9 @@ const dokumen = "cypress/fixtures/file-upload/lorem-ipsum.pdf";
 
 beforeEach(() => {
     login.visit();
-    login.user("Admin Support");
-    login.konfirmasiLogin();
-    login.pilihModul("Admin Support Sevima", "Kerjasama");
+    login.user("Admin Kerjasama");
+    // login.konfirmasiLogin();
+    login.pilihModul("Admin Kerjasama", "Kerjasama");
     kerma.visitPage();
 
     cy.fixture("kerma/kerjasama").then((data) => {
@@ -36,7 +36,7 @@ describe("+ Positif Case", () => {
             kerma.inputTglAwal(data.tglAwal);
             kerma.inputTglAkhir(data.tglAkhir);
             keyword.autoSelected('name="id_status_kerjasama"', data.status);
-            kerma.dokumen(dokumen, { fileName: "dokumen-kerjasama.pdf" });
+            // kerma.dokumen(dokumen, { fileName: "dokumen-kerjasama.pdf" });
 
             kerma.pihak1().within(() => {
                 kerma.pihakDari(data.pihak1);

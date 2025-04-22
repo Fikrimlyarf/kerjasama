@@ -9,9 +9,9 @@ let dataDana;
 
 beforeEach(() => {
     login.visit();
-    login.user("Admin Support");
-    login.konfirmasiLogin();
-    login.pilihModul("Admin Support Sevima", "Kerjasama");
+    login.user("Admin Kerjasama");
+    // login.konfirmasiLogin();
+    login.pilihModul("Admin Kerjasama", "Kerjasama");
     dana.visitPage();
 
     cy.fixture("data-referensi/sumber_dana").then((data) => {

@@ -9,9 +9,9 @@ let dataSasaran;
 
 beforeEach(() => {
     login.visit();
-    login.user("Admin Support");
-    login.konfirmasiLogin();
-    login.pilihModul("Admin Support Sevima", "Kerjasama");
+    login.user("Admin Kerjasama");
+    // login.konfirmasiLogin();
+    login.pilihModul("Admin Kerjasama", "Kerjasama");
     sasaran.visitPage();
 
     cy.fixture("data-referensi/sasaran_kinerja").then((data) => {
@@ -36,7 +36,7 @@ describe("+ Positif Case", () => {
             });
             sasaran.aksiSimpan();
             keyword.alert("Simpan", "Sasaran Kinerja");
-            sasaran.aksiKembalikelist();
+            sasaran.aksiKembalikeDaftar();
         });
     });
 

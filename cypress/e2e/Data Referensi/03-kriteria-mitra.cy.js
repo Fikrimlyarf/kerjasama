@@ -9,9 +9,9 @@ let dataKriteria;
 
 beforeEach(() => {
     login.visit();
-    login.user("Admin Support");
-    login.konfirmasiLogin();
-    login.pilihModul("Admin Support Sevima", "Kerjasama");
+    login.user("Admin Kerjasama");
+    // login.konfirmasiLogin();
+    login.pilihModul("Admin Kerjasama", "Kerjasama");
     kriteria.visitPage();
 
     cy.fixture("data-referensi/kriteria_mitra").then((data) => {

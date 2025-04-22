@@ -16,8 +16,8 @@ class SasaranKinerja {
         cy.contains("Simpan").should("be.visible").click();
     }
 
-    aksiKembalikelist() {
-        cy.contains("Kembali ke List").should("be.visible").click();
+    aksiKembalikeDaftar() {
+        cy.contains("Kembali ke Daftar").should("be.visible").click();
     }
 
     aksiUbahData() {
