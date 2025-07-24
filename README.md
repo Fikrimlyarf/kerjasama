@@ -1,6 +1,7 @@
 # First Move
 
-Sebelum menjalankan test case cypress jangan lupa membuat file cypress.env.json, letaknya setara dengan cypress.config.js
+Sebelum menjalankan test case cypress pastikan file cypress.env.json sudah dibuat, letaknya setara dengan cypress.config.js
+dengan struktur isi seperti di bawah untuk mendatakan role user
 
 ## cypress.env.json
 
